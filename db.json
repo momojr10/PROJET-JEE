@@ -1,0 +1,456 @@
+
+{
+
+  "Products" :[
+    {
+        "name":"Product 1",
+        "price":5933,
+        "description":"Pantalon pret",
+        "category":"Pantalon",
+        "images":[
+           "/assets/Image_Amoza/Pantalons/j1.jpg.jpg",
+           "/assets/Image_Amoza/Pantalons/j11.jpg.webp"
+
+        ]  
+    },
+    {
+        "name":"Product 2",
+        "price":5933,
+        "description":"Pantalon pret",
+        "category":"Pantalon",
+        "images":[
+            "/assets/Image_Amoza/Pantalons/j2.jpg.jpg",
+            "/assets/Image_Amoza/Pantalons/j22.jpg.webp"
+ 
+         ]  
+    },
+    {
+        "name":"Product 3",
+        "price":5933,
+        "description":"Patanlon pret",
+        "category":"Pantalon",
+        "images":[
+            "/assets/Image_Amoza/Pantalons/j3.jpg.jpg",
+            "/assets/Image_Amoza/Pantalons/j33.jpg.webp"
+ 
+         ]   
+    },
+    {
+        "name":"Product 4",
+        "price":5933,
+        "description":"Pantalon pret",
+        "category":"Pantalon",
+        "images":[
+            "/assets/Image_Amoza/Pantalons/j4.jpg.jpg",
+            "/assets/Image_Amoza/Pantalons/j44.jpg.webp"
+ 
+         ]    
+    },
+    {
+        "name":"Product 5",
+        "price":5933,
+        "description":"Chemise pret",
+        "category":"Chemise",
+        "images":[
+            "/assets/Image_Amoza/Pantalons/j5.jpg.jpg",
+            "/assets/Image_Amoza/Pantalons/j55.jpg.webp"
+         ]  
+    },
+    {
+        "name":"Product 6",
+        "price":5933,
+        "description":"Robe pret",
+        "category":"Robe",
+        "images":[
+            "/assets/Image_Amoza/Robes/R1.jpg.jpg",
+            "/assets/Image_Amoza/Robes/R11.jpg.webp"
+         ]  
+    },
+    {
+        "name":"Product 7",
+        "price":5933,
+        "description":"Robe pret",
+        "category":"Robe",
+        "images":[
+            "/assets/Image_Amoza/Robes/R2.jpg.jpg",
+            "/assets/Image_Amoza/Robes/R22.jpg.webp"
+         ]  
+    },
+    {
+        "name":"Product 8",
+        "price":5933,
+        "description":"Robe pret",
+        "category":"Robe",
+        "images":[
+            "/assets/Image_Amoza/Robes/R3.jpg.jpg",
+            "/assets/Image_Amoza/Robes/R33.jpg.webp"
+         ]  
+    },
+    {
+        "name":"Product 9",
+        "price":5933,
+        "description":"Robe pret",
+        "category":"Robe",
+        "images":[
+            "/assets/Image_Amoza/Robes/R4.jpg.jpg",
+            "/assets/Image_Amoza/Robes/R44.jpg.webp"
+         ]  
+    },
+    {
+        "name":"Product 10",
+        "price":5933,
+        "description":"Robe pret",
+        "category":"Robe",
+        "images":[
+            "/assets/Image_Amoza/Robes/R5.jpg.jpg",
+            "/assets/Image_Amoza/Robes/R55  .jpg.webp"
+         ]  
+    },
+    {
+        "name":"Product 11",
+        "price":5933,
+        "description":"Manteau pret",
+        "category":"Manteau",
+        "images":[
+            "/assets/Image_Amoza/Manteau/M1.jpg",
+            "/assets/Image_Amoza/Manteau/M11.jpg"
+         ]  
+    },
+    {
+        "name":"Product 12",
+        "price":5933,
+        "description":"Manteau pret",
+        "category":"Manteau",
+        "images":[
+            "/assets/Image_Amoza/Manteau/M2.jpg",
+            "/assets/Image_Amoza/Manteau/M22.jpg"
+         ]  
+    },
+    {
+        "name":"Product 13",
+        "description":"Manteau pret",
+        "category":"Manteau",
+        "images":[
+            "/assets/Image_Amoza/Manteau/M3.jpg",
+            "/assets/Image_Amoza/Manteau/M33    .jpg"
+         ]  
+    },
+    {
+        "name":"Product 14",
+        "price":5933,
+        "description":"Manteau pret",
+        "category":"Manteau",
+        "images":[
+            "/assets/Image_Amoza/Manteau/M4.jpg",
+            "/assets/Image_Amoza/Manteau/M44.jpg"
+         ]  
+    },
+    {
+        "name":"Product 15",
+        "price":5933,
+        "description":"Manteau pret",
+        "category":"Manteau",
+        "images":[
+            "/assets/Image_Amoza/Manteau/M5.jpg",
+            "/assets/Image_Amoza/Manteau/M55.jpg"
+         ]  
+    },
+    {
+        "name":"Product 16",
+        "price":5933,
+        "description":"Lunette pret",
+        "category":"Lunette",
+        "images":[
+            "/assets/Image_Amoza/Lunettes/L1.jpg",
+            "/assets/Image_Amoza/Lunettes/L11.jpg"
+         ]  
+    },
+    {
+        "name":"Product 17",
+        "price":5933,
+        "description":"Lunette pret",
+        "category":"Lunette",
+        "images":[
+            "/assets/Image_Amoza/Lunettes/L2.jpg",
+            "/assets/Image_Amoza/Lunettes/L22.jpg"
+         ]  
+    },
+    {
+        "name":"Product 18",
+        "price":5933,
+        "description":"Lunette pret",
+        "category":"Lunette",
+        "images":[
+            "/assets/Image_Amoza/Lunettes/L3.jpg",
+            "/assets/Image_Amoza/Lunettes/L33.jpg"
+         ]  
+    },
+    {
+        "name":"Product 19",
+        "price":5933,
+        "description":"Lunette pret",
+        "category":"Lunette",
+        "images":[
+            "/assets/Image_Amoza/Lunettes/L4.jpg",
+            "/assets/Image_Amoza/Lunettes/L44.jpg"
+         ]  
+    },
+    {
+        "name":"Product 20",
+        "price":5933,
+        "description":"Lunette pret",
+        "category":"Lunette",
+        "images":[
+            "/assets/Image_Amoza/Lunettes/L5.jpg",
+            "/assets/Image_Amoza/Lunettes/L55.jpg"
+         ]  
+    },
+    {
+        "name":"Product 21",
+        "price":5933,
+        "description":"TShirt pret",
+        "category":"TShirt",
+        "images":[
+            "/assets/Image_Amoza/TShirts/TS1.jpg",
+            "/assets/Image_Amoza/TShirts/TS11.jpg"
+         ]  
+    },
+    {
+        "name":"Product 22",
+        "price":5933,
+        "description":"TShirt pret",
+        "category":"TShirt",
+        "images":[
+            "/assets/Image_Amoza/TShirts/TS2.jpg",
+            "/assets/Image_Amoza/TShirts/TS22.jpg"
+         ]
+    },
+    {
+        "name":"Product 23",
+        "price":5933,
+        "description":"TShirt pret",
+        "category":"TShirt",
+        "images":[
+            "/assets/Image_Amoza/TShirts/TS3.jpg",
+            "/assets/Image_Amoza/TShirts/TS33.jpg"
+         ] 
+    },
+    {
+        "name":"Product 24",
+        "price":5933,
+        "description":"TShirt pret",
+        "category":"TShirt",
+        "images":[
+            "/assets/Image_Amoza/TShirts/TS4.jpg",
+            "/assets/Image_Amoza/TShirts/TS44.jpg"
+         ]
+    },
+    {
+        "name":"Product 25",
+        "price":5933,
+        "description":"TShirt pret",
+        "category":"TShirt",
+        "images":[
+            "/assets/Image_Amoza/TShirts/TS5.jpg",
+            "/assets/Image_Amoza/TShirts/TS55.jpg"
+         ]
+    },
+    {
+        "name":"Product 26",
+        "price":5933,
+        "description":"Casquette pret",
+        "category":"Casquette",
+        "images":[
+            "/assets/Image_Amoza/Casquettes/ca1.jpg.webp",
+            "/assets/Image_Amoza/Casquettes/ca11.jpg.jpg"
+         ]  
+    },
+    {
+        "name":"Product 27",
+        "price":5933,
+        "description":"Casquette pret",
+        "category":"Casquette",
+        "images":[
+            "/assets/Image_Amoza/Casquettes/ca2.jpg.webp",
+            "/assets/Image_Amoza/Casquettes/ca22.jpg.jpg"
+         ]  
+    },
+    {
+        "name":"Product 28",
+        "price":5933,
+        "description":"Casquette pret",
+        "category":"Casquette",
+        "images":[
+            "/assets/Image_Amoza/Casquettes/ca3.jpg.webp",
+            "/assets/Image_Amoza/Casquettes/ca33.jpg.jpg"
+         ]  
+    },
+    {
+        "name":"Product 29",
+        "price":5933,
+        "description":"Casquette pret",
+        "category":"Casquette",
+        "images":[
+            "/assets/Image_Amoza/Casquettes/ca4.jpg.webp",
+            "/assets/Image_Amoza/Casquettes/ca44.jpg.jpg"
+         ]   
+    },
+    {
+        "name":"Product 30",
+        "price":5933,
+        "description":"Casquette pret",
+        "category":"Casquette",
+        "images":[
+            "/assets/Image_Amoza/Casquettes/ca5.jpg.webp",
+            "/assets/Image_Amoza/Casquettes/ca55.jpg.jpg"
+         ]  
+    },
+    {
+        "name":"Product 31",
+        "price":5933,
+        "description":"Chaussette pret",
+        "category":"Chaussette",
+        "images":
+            "/assets/Image_Amoza/Chaussettes/CH1.jpg"
+          
+    },
+    {
+        "name":"Product 32",
+        "price":5933,
+        "description":"Chaussette pret",
+        "category":"Chaussette",
+        "images":
+            "/assets/Image_Amoza/Chaussettes/CH2.jpg"
+          
+    },
+    {
+        "name":"Product 33",
+        "price":5933,
+        "description":"Chaussette pret",
+        "category":"Chaussette",
+        "images":
+            "/assets/Image_Amoza/Chaussettes/CH3.jpg"
+          
+    },
+    {
+        "name":"Product 34",
+        "price":5933,
+        "description":"Chaussette pret",
+        "category":"Chaussette",
+        "images":
+            "/assets/Image_Amoza/Chaussettes/CH4.jpg"
+          
+    },
+    {
+        "name":"Product 35",
+        "price":5933,
+        "description":"Chaussette pret",
+        "category":"Chaussette",
+        "images":
+            "/assets/Image_Amoza/Chaussettes/CH5.jpg"
+          
+    },
+    {
+        "name":"Product 36",
+        "price":5933,
+        "description":"Talon pret",
+        "category":"Talon",
+        "images":[
+            "/assets/Image_Amoza/Talons/T1.jpg.webp",
+            "/assets/Image_Amoza/Talons/T11.jpg.jpg"
+        ]
+          
+    },
+    {
+        "name":"Product 37",
+        "price":5933,
+        "description":"Talon pret",
+        "category":"Talon",
+        "images":[
+            "/assets/Image_Amoza/Talons/T2.jpg.webp",
+            "/assets/Image_Amoza/Talons/T22.jpg.jpg"
+        ]
+    },
+    {
+        "name":"Product 38",
+        "price":5933,
+        "description":"Talon pret",
+        "category":"Talon",
+        "images":[
+            "/assets/Image_Amoza/Talons/T3.jpg.webp",
+            "/assets/Image_Amoza/Talons/T33.jpg.jpg"
+        ]
+    },
+    {
+        "name":"Product 39",
+        "price":5933,
+        "description":"Talon pret",
+        "category":"Talon",
+        "images":[
+            "/assets/Image_Amoza/Talons/T4.jpg.webp",
+            "/assets/Image_Amoza/Talons/T44.jpg.jpg"
+        ]
+    },
+    {
+        "name":"Product 40",
+        "price":5933,
+        "description":"Talon pret",
+        "category":"Talon",
+        "images":[
+            "/assets/Image_Amoza/Talons/T5.jpg.webp",
+            "/assets/Image_Amoza/Talons/T55.jpg.jpg"
+        ]
+    },
+    {
+        "name":"Product 41",
+        "price":5933,
+        "description":"Sacs pret",
+        "category":"Sacs",
+        "images":[
+            "/assets/Image_Amoza/Sacs/SA1.jpg.webp",
+            "/assets/Image_Amoza/Sacs/SA11.jpg.jpg"
+        ]
+    },
+    {
+        "name":"Product 42",
+        "price":5933,
+        "description":"Sacs pret",
+        "category":"Sacs",
+        "images":[
+            "/assets/Image_Amoza/Sacs/SA2.jpg.webp",
+            "/assets/Image_Amoza/Sacs/SA22.jpg.jpg"
+        ]
+    },
+    {
+        "name":"Product 43",
+        "price":5933,
+        "description":"Sacs pret",
+        "category":"Sacs",
+        "images":[
+            "/assets/Image_Amoza/Sacs/SA3.jpg.webp",
+            "/assets/Image_Amoza/Sacs/SA33.jpg.jpg"
+        ]
+    } ,
+    {
+        "name":"Product 44",
+        "price":5933,
+        "description":"Sacs pret",
+        "category":"Sacs",
+        "images":[
+            "/assets/Image_Amoza/Sacs/SA4.jpg.webp",
+            "/assets/Image_Amoza/Sacs/SA44.jpg.jpg"
+        ]
+    },
+    {
+        "name":"Product 45",
+        "price":5933,
+        "description":"Sacs pret",
+        "category":"Sacs",
+        "images":[
+            "/assets/Image_Amoza/Sacs/SA5.jpg.webp",
+            "/assets/Image_Amoza/Sacs/SA55.jpg.jpg"
+        ]
+    }
+    
+]
+}

@@ -1,0 +1,49 @@
+.promo-icon{
+    width: 50px;
+    font-size: 2.5rem ;
+}
+
+.promo-item{
+    min-width: 300px;
+}
+.promo-item .promo-details h3{
+    font-size: 0.7rem;
+}
+.promo-icon{
+    color: var(--main-color);
+}
+
+/***********MEDIA ********/
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width:992px) {
+
+   .promo-item{
+    min-width: auto;
+}
+
+}
+@media screen and (max-width:768px) {
+    .promo{
+        text-align: center;
+    }
+  .promo-container{
+    flex-direction: column;
+  }
+
+
+}
+@media screen and (max-width:576px) {
+  
+}
+
+@media screen and (max-width:427px) {
+   
+}
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+/*
+relative et absolute pour enlever du flux normal
+
+flexible c'est pour rendre la boite flexible en utilisant
+flex et pour l'etirer on utilise flex-1
+
+la boite etant flexible jcc permet de centrer sur la ligne 
+horizontable et aic verticale
+pour un espace equitable on utilise jcsb
+
+toujours etant flexible pour revenir en ligne d'une 
+maniere dynamique nous pouvons utiliser
+flex-wrap:wrap
+
+pourque l'ecriture ne revient pas à la ligne 
+on utilise white-space: 
+*/

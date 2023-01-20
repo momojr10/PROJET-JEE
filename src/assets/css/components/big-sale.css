@@ -1,0 +1,63 @@
+.banner-big-sale .container{
+    background: url(../../images/img2.png) repeat-x ;
+    height: 50px;
+    padding: 5px 5px;
+}
+.banner-big-sale-content{
+    color: var(--main-color-white);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.banner-big-sale .btn{
+    border-radius: none;
+    height: 15px;
+    line-height: 15px;
+    font-weight: bold;
+    padding: 10px 5px;
+    font-size: 1rem;
+    white-space: wrap;
+    
+}
+.banner-big-sale-btn.btn{
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+    transform: rotate(-10deg);
+}
+
+.banner-big-sale-action.btn{
+  
+    transform: rotate(10deg);
+}
+
+/***********MEDIA ********/
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width:992px) {
+
+  
+
+}
+@media screen and (max-width:768px) {
+   .banner-big-sale-content{
+    display: none;
+   }
+   .banner-big-sale .container{
+        padding: 0px;
+   }
+
+
+}
+@media screen and (max-width:576px) {
+  
+}
+
+@media screen and (max-width:427px) {
+   
+}
+
+
+
+
+
+

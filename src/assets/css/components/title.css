@@ -1,0 +1,59 @@
+.section-title{
+    text-transform: uppercase;
+    padding: 20px 0px;
+    
+}
+.section-title h2{
+    display: flex;
+    gap: 10px;
+    
+}
+.section-title h2::after,
+.section-title h2::before
+{
+    content: '';
+    flex: 1;
+    padding: 5px;
+    height: 0;
+    border-top: 1px solid var(--main-color-gray);
+    position: relative;
+    top: 20px ;
+    
+}
+
+/***********MEDIA ********/
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width:992px) {
+    .section-title h2{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .section-title h2::after,
+.section-title h2::before
+{
+   
+    top: 12px ;
+    
+}
+   
+
+}
+@media screen and (max-width:768px) {
+
+    
+}
+@media screen and (max-width:576px) {
+  
+}
+
+@media screen and (max-width:427px) {
+   
+}
+
+
+
+
+
+
