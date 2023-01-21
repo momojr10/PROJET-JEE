@@ -1,6 +1,7 @@
 footer{
     background-color: var(--main-color-footer);
     color: var(--main-color-white);
+    margin-top: 50px;
 }
 footer .footer-item{
     margin: 10px ;

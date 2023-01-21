@@ -1,11 +1,11 @@
- .product{
+ #items{
     width: 300px;
-    height: 600px;
+    height: 450px;
     cursor: pointer;
     margin-left: 70px;
 } 
 
-.box1{
+#box1{
     width: 240px;
     height: 50px;
     cursor: pointer;
@@ -13,25 +13,27 @@
     text-align: center;
     color: white;
     line-height: 50px;
+    border: 1px solid  black;
 }
 
-.box2{
+#box2{
     width: 50px;
     height: 50px;
     background-color: black;
     text-align: center;
     line-height: 50px;
+    border: 1px solid  black;
 }
 
-.card{
+#card{
     width: 300px;
     display: grid;
     grid-template-columns: 240px 50px;
     gap: 10px;
      
 }
-
-.item{
+ 
+  #items{
 
     margin-top: 80px;
     margin-bottom: 80px;
@@ -49,9 +51,40 @@ box-sizing: border-box;
 }
 
 .price{
-margin-top: 10px;
 width: 300px;
 height: 30px;
 box-sizing: border-box;
 }
 
+
+img{
+  width: 300px;
+  height: 400px;
+
+}
+
+#box1:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+
+i{
+
+    color: white;
+}
+
+
+
+
+/* i:hover{
+    color: black;
+}  */
+
+/* 
+#box2:hover{
+  background-color: white;
+  
+} */

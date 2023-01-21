@@ -1,26 +1,18 @@
 
-<div class="item">
-
-
-    <div class="product">
-        <img class="photo" src="/assets/Image_Amoza/Pantalons/j4.jpg.jpg" alt="">
-         
-          <div class="desc">Straight leg jeans</div>
+<div id="items"  (mouseenter)="enterF(Produit)" (mouseleave)="leave(Produit)">
+   
+        <img class="{{Produit.name}}" src={{Produit.images[0]}} alt="{{Produit.images[1]}}">
+     
+          <div class="desc">{{Produit.description}}</div>
 
           <div class="price">
-           78889 &dollar;
+           {{Produit.price}} &dollar;
           </div>
 
+        <div  class="{{Produit.id}}" id="card"  hidden>
+            <div   id="box1">Add To Card</div>
+            <div   id="box2" ><i class="fa-regular fa-heart"></i></div>
+        </div> 
 
-        <div  class="card">
-            <div hidden class="box1">Add To Card</div>
-            <div hidden  class="box2"><i class="fa-solid fa-heart"></i></div>
-            
-        </div>
-
-    </div>
- 
-
-   
     
 </div>
