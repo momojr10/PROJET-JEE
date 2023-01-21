@@ -107,53 +107,69 @@
          ]  
     },
     {
-        "name":"Product 11",
+        "id":"p11",
+        "name":"Product11",
         "price":5933,
         "description":"Manteau pret",
         "category":"Manteau",
+        "bx1":"pr11",
+        "bx2":"pr111",
         "images":[
             "/assets/Image_Amoza/Manteau/M1.jpg",
             "/assets/Image_Amoza/Manteau/M11.jpg"
          ]  
     },
     {
-        "name":"Product 12",
+        "id":"p12",
+        "name":"Product12",
         "price":5933,
         "description":"Manteau pret",
         "category":"Manteau",
+        "bx1":"pr12",
+        "bx2":"pr122",
         "images":[
             "/assets/Image_Amoza/Manteau/M2.jpg",
             "/assets/Image_Amoza/Manteau/M22.jpg"
          ]  
     },
     {
-        "name":"Product 13",
+        "id":"p13",
+        "name":"Product13",
         "description":"Manteau pret",
         "category":"Manteau",
+        "bx1":"pr13",
+        "bx2":"pr133",
         "images":[
             "/assets/Image_Amoza/Manteau/M3.jpg",
-            "/assets/Image_Amoza/Manteau/M33    .jpg"
+            "/assets/Image_Amoza/Manteau/M33.jpg"
          ]  
     },
     {
-        "name":"Product 14",
+        "id":"p14",
+        "name":"Product14",
         "price":5933,
         "description":"Manteau pret",
         "category":"Manteau",
+        "bx1":"pr14",
+        "bx2":"pr144",
         "images":[
             "/assets/Image_Amoza/Manteau/M4.jpg",
             "/assets/Image_Amoza/Manteau/M44.jpg"
          ]  
     },
     {
-        "name":"Product 15",
+        "id":"p15",
+        "name":"Product15",
         "price":5933,
         "description":"Manteau pret",
         "category":"Manteau",
+        "bx1":"pr15",
+        "bx2":"pr155",
         "images":[
             "/assets/Image_Amoza/Manteau/M5.jpg",
             "/assets/Image_Amoza/Manteau/M55.jpg"
          ]  
+         
     },
     {
         "name":"Product 16",
