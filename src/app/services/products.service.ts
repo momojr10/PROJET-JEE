@@ -16,6 +16,7 @@ private cart:any
 private listcat:any
 private totalproduct:number=0
 constructor(private http:HttpClient){
+  
 }
 getAllProducts(): Observable<Product[]>{
     return this.http.get<Product[]>(this.listproduct)
