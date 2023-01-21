@@ -10,12 +10,14 @@ export class NavBarComponent {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    $(".dropdown").click(function(){
-      $(".dropdown-menu").show(function(){
-        $(".dropdown").click(function(){
-          $(".dropdown-menu").hide()
-      })  
-  })
+    $(".dropdown").on({
+      mouseenter:function() {
+        $(".dropdown-menu").show();
+      },
+      mouseleave:function(){
+        $(".dropdown-menu").hide();
+      }
+     
   
 })
 }
