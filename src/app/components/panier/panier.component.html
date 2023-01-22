@@ -1,53 +1,107 @@
 
+
 <ng-container *ngIf="Products?.length!=0">
-    <div class="container">
-        <div class="card-table">
-            <div class="cart-product">
-                <table class="table table-responsive">
-                    <thead>
-                        <tr>
-                        <th>Sr.No</th>
-                        <th>Product Name</th>
-                        <th>Product Image</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                        <th>Total</th>
-                        <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let item of Products;let i=index">
-                            <td>{{i+1}}</td>
-                            <td>{{item.name}}</td>
-                            <td><img style="width: 120px;" src="{{item}}" alt=""></td>
-                            <td>{{item.description}}</td>
-                            <td>{{item.price}}</td>
-                            
-                            
-                            <td>
-                                <button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+    <div class="container flex gap-10">
+        <div style="width: 800px;border:1px solid black">
+            <table class="table table stripped">
+                <thead>
+                    <tr >
+                    <th>Product</th>
+                    <th></th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of Products;let i=index">
+                        <td><img style="width: 120px;" src="{{item.images[0]}}" alt="" width="100px" height="100px"></td>
+                        <td>{{item.description}}jjjjjjjjjjjjjjjjjjjjjj</td>
+                        <td><div style="width:100px;">
+                            <select class="form-select" aria-label="Default select example" [(ngModel)]="un">
+                            <option  selected>1</option>
+                            <option  >2</option>
+                            <option >3</option>
+                          </select>
+                         
+                        </div></td>
+                        <td >
+                            {{item.price}}
+                        </td>
+                        
+                        <td><button  class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                                <div class="flex gap-20" style="padding-left:350px;">
+                                <div><button (click)="emptycart()" class="btn btn-danger" >Empty Cart</button></div>
+                                <div><button routerLink="/products" class="btn btn-primary">Shop More</button></div>
+                               
+                            </div>
                             </td>
+                        
                         </tr>
-                        <tr>
-                            
-                                <td colspan="4"></td>
-                                <td><button (click)="emptycart()" class="btn btn-danger" >Empty Cart</button></td>
-                                <td><button routerLink="/products" class="btn btn-primary">Shop More</button></td>
-                                <td><button class="btn btn-success">Checkout</button></td>
-                                <td><strong>Grand Total :</strong>${{Total}}</td>
-                            </tr>
-
-                    </tbody>
-                </table>
-            </div>
+                </tbody>
+            </table>
         </div>
+        <div style="width:300px;border:1px solid black">
+            <table class="table">
+                <thead>
+                    <tr>
+                         <th>Have a coupon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <td colspan="2">
+                        <div class="input-group">
+                            <form action="" [formGroup]="signinForm">
+                            <input  type="text" [formControl]="text" name="text" class="form-control" id="discount" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button style="margin-right:10px;"(click)="handleSubmit()" class="btn btn-primary" type="button" id="button-addon2">Apply</button>
+                        </form>
+                        </div></td> 
+                    </tr>
+                    <tr>
+                        <td>Total Price:</td>
+                        <td>{{TotalPrice}}</td>
+                    </tr>
+                    <tr>
+                        <td>Discount:</td>
+                        <td>{{discount}}</td>
+                    </tr>
+                    <tr>
+                        <td>Total:</td>
+                        <td>{{Total}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="flex gap-10">
+                                    <div>
+                                    <i class="fa-3x fa-brands fa-cc-paypal"></i>
+                                    
+                                </div>
+                                <div>
+                                    <i class="fa-3x fa-brands fa-cc-visa"></i>
+                                </div>
+                                <div><i class="fa-3x fa-brands fa-cc-mastercard"></i>
+                                </div>
+                    </div>
+                    </td>
+                        
+                    </tr>
+                  <tr>
+                    
+                        <td colspan="2"><button class="btn btn-success">Checkout</button></td>
+                    
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    
     </div>
-</ng-container>
-
-
+    </ng-container>
 <ng-container *ngIf="Products?.length==0">
-
-<div class="container">
+<div class="container" style="margin-bottom: 200px;">
     <div class="card">
         <h5 class="card-title">My cart</h5>
     </div>
