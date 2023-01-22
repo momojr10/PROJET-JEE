@@ -14,6 +14,7 @@ import { PanierComponent } from './components/panier/panier.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     ChartModule
   ],
   providers: [],
