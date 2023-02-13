@@ -1,6 +1,7 @@
 import { Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {Subscriber, Subscription } from 'rxjs';
 import { Product } from 'src/app/model/product.model';
+import { CartService } from 'src/app/services/cart.service';
 import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
@@ -15,7 +16,7 @@ export class ProductItemComponent  {
 
   data0:string []=[];
   data1:string []=[];
-constructor(){}
+constructor(private p:CartService){}
 
   ngOnDestroy(): void {
 
@@ -25,7 +26,7 @@ constructor(){}
   
  
   enterF(Produit:any){
-     console.log(Produit.id);
+    // console.log(Produit.id);
      
    $("."+Produit.name).attr("src",Produit.images[1]);
    $("."+Produit.id).removeAttr("hidden");
@@ -35,10 +36,13 @@ constructor(){}
   } 
 
   leave(Produit:any){
-    console.log(Produit.id);
+    //console.log(Produit.id);
     $("."+Produit.name).attr("src",Produit.images[0]);
     $("."+Produit.id).hide();
     
+  }
+  addCart(item:any){
+    this.p.getPanierProducts(item);
   }
 
 
