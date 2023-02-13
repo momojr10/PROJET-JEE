@@ -1,8 +1,141 @@
+<!-- <owl-carousel-o [options]="customOptions" >
+    <ng-template carouselSlide  *ngFor="let item of Produit" >
+       <app-product-item   [Produit]="item"  >  </app-product-item> 
+    </ng-template>
+</owl-carousel-o>
+ -->
+<!-- <p class="para1">it's simple really... love is everything. <i class="fa-sharp fa-solid fa-heart"></i></p> -->
 
-<div class="list">
 
-    <app-product-item  [Produit]="item"  *ngFor="let item of Produit" >  </app-product-item> 
+<!-- <div class="pic">
 
+   <div class="pic1"> <img src="../../../assets/Image_Amoza/Image_princi/IP7.jpg" alt=""></div>
+   <div class="pic2"><img src="../../../assets/Image_Amoza/Image_princi/IP8.jpg" alt=""></div>
+  
+   
+
+</div> -->
+
+
+<div class="container" id="pic">
+  <img src="../../../assets/Image_Amoza/Image_princi/IP9.png" id="img9" alt="">
 </div>
 
 
+
+
+
+
+<div class="container" id="list">
+  <div class="row">
+  
+  <app-product-item class="items"  *ngFor="let Product of RandProduct2" [Product]="Product" >  </app-product-item> 
+    
+ </div>
+ </div>
+
+
+
+
+
+ <div class="container-fluid " id="pic">
+  
+   <div class="row">
+     <div class="col-md-6"> 
+      <img src="../../../assets/Image_Amoza/Image_princi/IP7.jpg" id="img1" alt="">
+   </div>
+     <div class="col-md-6"> 
+     
+      <img src="../../../assets/Image_Amoza/Image_princi/IP8.jpg" id="img2" alt="" >
+   
+   </div>
+    <div class="box1">
+    <p class="bx1">
+      ON-THE-GO ACCESSORIES
+    </p>
+
+    <P class="bx2">
+      PACKABLE STYLES
+    </P>
+   
+
+    </div>
+
+    <button  id="button1">
+      SHOP NOW
+   </button>
+
+
+    <div class="box2">
+      <p class="bx1">
+         ON-THE-GO ACCESSORIES
+       </p>
+   
+       <P class="bx2">
+         PACKABLE STYLES
+       </P>
+
+      <button  id="button2">
+         SHOP NOW
+      </button>
+   
+
+
+    </div> 
+ 
+   <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    
+
+  
+   
+
+
+
+
+   
+   <div class="container">
+    <div class="row">
+    <app-product-item class="items"  *ngFor="let Product of RandProduct" [Product]="Product" >  </app-product-item> 
+         
+   </div>
+   </div>
+  
+
+   <div class="choix">
+    <h2>Why choose AMOZA?</h2>
+
+
+   
+      <div class="container text-center" id="ftg">
+        <div class="row">
+         <div class="col-6 col-md-4">
+          <i class="fa-regular fa-heart"></i>
+          <p class="first">Virtual Fitting Room</p>
+          <p>  Try on a style before you purchase</p>
+
+         </div>
+
+         <div class="col-6 col-md-4">
+          <i class="fa-sharp fa-solid fa-child-dress"></i>
+          <p class="first">Personalize Your Own</p>
+          <p>Customize your very own dress</p>
+         </div>
+
+         <div class="col-6 col-md-4">
+          <i class="fa-solid fa-truck-front"></i>
+          <p class="first"> Free Shipping</p>
+          <p>We can reach you wherever you are</p>
+         </div>
+
+       </div>
+       </div>
+
+
+
+   </div>
+  
+
+
+
+ 
+  

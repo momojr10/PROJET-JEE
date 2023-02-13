@@ -31,8 +31,6 @@ setProduct(product:any){
     return Total;
  }
  getPanierProducts(produit:any){
-   
-    
    this.cart.push(produit)
    this.productList.next(this.cart);
    this.getTotalProducts();

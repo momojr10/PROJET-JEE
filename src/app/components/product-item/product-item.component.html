@@ -1,18 +1,24 @@
 
-<div id="items"  (mouseenter)="enterF(Produit)" (mouseleave)="leave(Produit)">
+
+
+<div class="col">
+<div id="items"  (mouseenter)="enterF(Product)" (mouseleave)="leave(Product)">
    
-        <img class="{{Produit.name}}" src={{Produit.images[0]}} alt="{{Produit.images[1]}}">
+        <img class="{{Product.name}}" src={{Product.images[0]}} alt="">
      
-          <div class="desc">{{Produit.description}}</div>
+          <div class="desc">{{Product.description}}</div>
 
           <div class="price">
-           {{Produit.price}} &dollar;
+           {{Product.price}} &dollar;
           </div>
 
-        <div  class="{{Produit.id}}" id="card"  hidden>
-            <div   id="box1" (click)="addCart(Produit)">Add To Card</div>
+        <div  class="{{Product.id}}" id="card"  hidden>
+            <div   id="box1" (click)="addCart(Product)">Add To Card</div>
             <div   id="box2" ><i class="fa-regular fa-heart"></i></div>
         </div> 
-
-    
 </div>
+
+</div>
+
+
+
