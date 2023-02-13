@@ -25,10 +25,6 @@ getAllProducts(): Observable<Product[]>{
     return this.http.get<Product[]>(this.listparcategory)
  }
 }
-var Moi:string[]=[]
-function name(params:string) {
-   Moi.push(params)
-   console.log(Moi); 
- }
+
  //name("Mohamed")
  //name("Mama")
