@@ -4,22 +4,25 @@
     margin: 25px;
     padding: 25px;
 }
+.cartcenter{
+    padding-top: 34px;
+}
 .center
 {
-    /*position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;*/
+    text-align: center;
 }
 .center img {
-    /*text-decoration: none;
+    text-decoration: none;
     color: inherit;
     border: none;
     outline: none;
     height: 162px;
     width: 250px;
-    margin: 20px 0px;*/
+    margin: 20px 0px;
 }
 h4, h6
 {
