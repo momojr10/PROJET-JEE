@@ -13,8 +13,11 @@ import { CategorieComponent } from './components/categorie/categorie.component';
 import { PanierComponent } from './components/panier/panier.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PageaccueilComponent } from './pageaccueil/pageaccueil.component';
+import { PagedashboardComponent } from './Pages/dashboard/pagedashboard.component';
+import { PagepanierComponent } from './Pages/pagepanier/pagepanier.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PanierComponent,
     FooterComponent,
     NavBarComponent,
-    DashboardComponent
+    DashboardComponent,
+    PageaccueilComponent,
+    PagedashboardComponent,
+    PagepanierComponent
   ],
   imports: [
     BrowserModule,

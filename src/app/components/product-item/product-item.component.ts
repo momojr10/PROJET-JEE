@@ -1,4 +1,5 @@
 import { Component, Input, OnDestroy, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 import {Subscriber, Subscription } from 'rxjs';
 import { Product } from 'src/app/model/product.model';
 import { CartService } from 'src/app/services/cart.service';
@@ -16,13 +17,10 @@ export class ProductItemComponent  {
 
   data0:string []=[];
   data1:string []=[];
-constructor(private p:CartService){}
+  recup:any[]=[];
+constructor(private p:CartService, private router :Router){}
 
-  ngOnDestroy(): void {
-
-
-    throw new Error('Method not implemented.');
-  }
+  
   
  
   enterF(Produit:any){
@@ -41,8 +39,11 @@ constructor(private p:CartService){}
     $("."+Produit.id).hide();
     
   }
-  addCart(item:any){
-    this.p.getPanierProducts(item);
+  addCart(item:any){  
+this.p.getAddPanierProducts(item);
+this.p.getPriceProductsItem(item);
+this.p.getQuantityProducts(item);
+this.router.navigate(["/panier"]);
   }
 
 
@@ -108,8 +109,6 @@ constructor(private p:CartService){}
           });
         });
      */
-   
-   
    
    
         
