@@ -1,0 +1,28 @@
+
+{
+
+    "Clients":[
+        {
+          "firstName":"ali",
+          "lastName":"ELHAJOUJI",
+          "email":"aliboyahajoji@gmail.com",
+          "password":"ali123"
+        },
+        {
+            "firstName":"mohamedo",
+            "lastName":"sidibie",
+            "email":"momo@gmail.com",
+            "password":"mohamed123"
+          },
+          {
+            "firstName":"muhamed",
+            "lastName":"azzaoui",
+            "email":"zagora@gmail.com",
+            "password":"zagora123"
+          }
+        
+        ]
+}
+
+
+

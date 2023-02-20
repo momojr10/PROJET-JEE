@@ -13,7 +13,8 @@ import { ProductsService } from 'src/app/services/products.service';
 })
 
 export class ProductItemComponent  {
-  @Input() Produit: any;
+  @Input() Product: any;
+  @Input() RandProduct: any;
 
   data0:string []=[];
   data1:string []=[];
@@ -23,20 +24,20 @@ constructor(private p:CartService, private router :Router){}
   
   
  
-  enterF(Produit:any){
+  enterF(Product:any){
     // console.log(Produit.id);
      
-   $("."+Produit.name).attr("src",Produit.images[1]);
-   $("."+Produit.id).removeAttr("hidden");
-   $("."+Produit.id).show();
+   $("."+Product.name).attr("src",Product.images[1]);
+   $("."+Product.id).removeAttr("hidden");
+   $("."+Product.id).show();
    
   
   } 
 
-  leave(Produit:any){
+  leave(Product:any){
     //console.log(Produit.id);
-    $("."+Produit.name).attr("src",Produit.images[0]);
-    $("."+Produit.id).hide();
+    $("."+Product.name).attr("src",Product.images[0]);
+    $("."+Product.id).hide();
     
   }
   addCart(item:any){  
@@ -46,6 +47,15 @@ this.p.getQuantityProducts(item);
 this.router.navigate(["/panier"]);
   }
 
+
+
+
+
+
+
+
+
+  
 
  /*  enter(){
     $("#box2").css("background-color", "white");
@@ -109,8 +119,7 @@ this.router.navigate(["/panier"]);
           });
         });
      */
-   
-   
+
         
   }
 
