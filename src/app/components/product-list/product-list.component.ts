@@ -12,12 +12,9 @@ export class ProductListComponent {
   Produit:Product[]=[] ;
   productsSub: Subscription | undefined
   ProduitCate:Product[]=[] ;
-  Momo:String="";
   
   constructor(private produitService:ProductsService){}
-    ngOnDestroy(): void {
-      throw new Error('Method not implemented.');
-    }
+    
   
   ngOnInit(): void {
   
@@ -31,26 +28,22 @@ export class ProductListComponent {
       next:(value:Product[])=>{
         this.Produit=value
         //console.log(this.Produit[0]);
-  
-       
-  
-     
-  
-        
-  
       },
       error:(error:any)=>{
         console.log(error);  
       },
       complete:()=>{
-        console.log("Completed");
-        
+        //console.log("Completed");
+  
       }
     })
-  
+   
   }
  
-
+  ngOnDestroy(): void {
+    this.productsSub?.unsubscribe();
+    
+  }
  
   
 

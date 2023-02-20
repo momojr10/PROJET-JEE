@@ -683,13 +683,13 @@ img{
 
 
 /*CONTAINER*/
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm{
+.container1,
+.container1-fluid,
+.container1-xxl,
+.container1-xl,
+.container1-lg,
+.container1-md,
+.container1-sm{
     width: 100%;
     padding-right: var(10);
     padding-left: var(10);

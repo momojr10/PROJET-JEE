@@ -1,3 +1,4 @@
+<ng-container *ngIf="Produit.length!=0">
 
 <div id="items"  (mouseenter)="enterF(Produit)" (mouseleave)="leave(Produit)">
    
@@ -10,9 +11,10 @@
           </div>
 
         <div  class="{{Produit.id}}" id="card"  hidden>
-            <div   id="box1">Add To Card</div>
+            <div  id="box1" (click)="addCart(Produit)">Add To Card</div>
             <div   id="box2" ><i class="fa-regular fa-heart"></i></div>
         </div> 
 
     
 </div>
+</ng-container>
