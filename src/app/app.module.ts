@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ChartModule } from 'angular2-chartjs';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,9 +16,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { PageaccueilComponent } from './pageaccueil/pageaccueil.component';
 import { PagedashboardComponent } from './Pages/dashboard/pagedashboard.component';
 import { PagepanierComponent } from './Pages/pagepanier/pagepanier.component';
+
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 @NgModule({
   declarations: [
@@ -32,17 +37,22 @@ import { PagepanierComponent } from './Pages/pagepanier/pagepanier.component';
     FooterComponent,
     NavBarComponent,
     DashboardComponent,
+
     PageaccueilComponent,
     PagedashboardComponent,
     PagepanierComponent
+
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    ChartModule
+    ChartModule,
+    CarouselModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
