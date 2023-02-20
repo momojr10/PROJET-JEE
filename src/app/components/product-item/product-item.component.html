@@ -1,3 +1,4 @@
+<ng-container *ngIf="Produit.length!=0">
 
 
 
@@ -12,8 +13,13 @@
            {{Product.price}} &dollar;
           </div>
 
+
+        <div  class="{{Produit.id}}" id="card"  hidden>
+            <div  id="box1" (click)="addCart(Produit)">Add To Card</div>
+
         <div  class="{{Product.id}}" id="card"  hidden>
             <div   id="box1" (click)="addCart(Product)">Add To Card</div>
+
             <div   id="box2" ><i class="fa-regular fa-heart"></i></div>
         </div> 
 </div>
@@ -21,4 +27,9 @@
 </div>
 
 
+
+
+    
+</div>
+</ng-container>
 

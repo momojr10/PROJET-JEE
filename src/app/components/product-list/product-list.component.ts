@@ -17,6 +17,7 @@ export class ProductListComponent {
   RandProduct2:Product[]=[] ;
   productsSub: Subscription | undefined
   ProduitCate:Product[]=[] ;
+
   tableau:any[]=[];
   Momo:String="";
   i:any;
@@ -24,11 +25,9 @@ export class ProductListComponent {
   k:any;
   l:any;
 
-  
+
   constructor(private produitService:ProductsService){}
-    ngOnDestroy(): void {
-      throw new Error('Method not implemented.');
-    }
+    
   
   ngOnInit(): void {
   
@@ -52,6 +51,9 @@ export class ProductListComponent {
     .subscribe({
       next:(value:Product[])=>{
         this.Produit=value
+
+        //console.log(this.Produit[0]);
+
         /* for(this.i=0;this.i<4;this.i++){
           
           this.RandProduct[this.i]=this.Produit[this.i];
@@ -60,15 +62,17 @@ export class ProductListComponent {
         }
         console.log(this.RandProduct); */
         
+
       },
       error:(error:any)=>{
         console.log(error);  
       },
       complete:()=>{
-        console.log("Completed");
-        
+        //console.log("Completed");
+  
       }
     })
+
     
 
 
@@ -136,11 +140,15 @@ export class ProductListComponent {
      
  
 
+
   }
 
 
  
-
+  ngOnDestroy(): void {
+    this.productsSub?.unsubscribe();
+    
+  }
  
  /*  customOptions: OwlOptions = {
     loop: false,

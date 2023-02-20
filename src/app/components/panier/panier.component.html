@@ -1,8 +1,8 @@
 
 
 <ng-container *ngIf="Products?.length!=0">
-    <div class="container flex gap-10">
-        <div style="width: 800px;border:1px solid black">
+    <div class="container flex gap-10" style="padding-left:85px;">
+        <div style="width: 800px;background-color: rgb(205, 203, 203); border-radius:20px">
             <table class="table table stripped">
                 <thead>
                     <tr >
@@ -16,26 +16,25 @@
                 <tbody>
                     <tr *ngFor="let item of Products;let i=index">
                         <td><img style="width: 120px;" src="{{item.images[0]}}" alt="" width="100px" height="100px"></td>
-                        <td>{{item.description}}jjjjjjjjjjjjjjjjjjjjjj</td>
-                        <td><div style="width:100px;">
-                            <select class="form-select" aria-label="Default select example" [(ngModel)]="un">
-                            <option  selected>1</option>
-                            <option  >2</option>
-                            <option >3</option>
-                          </select>
-                         
+                       
+                        <td  class="cartcenter">{{item.description}}jjjjjjjjjjjjjjjjjjjjjj</td>
+                        <td class="cartcenter"><div style="width:100px;text-align:center;">
+                            <input  type="text" value="{{this.cartService.getQuantityProducts(item) }}" style="text-align:center;"  class="form-control"    aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <!--[(ngModel)]="Qproduct.quantite"  (click)="TotalPriceItem()" ! -->
                         </div></td>
-                        <td >
-                            {{item.price}}
+                        <td class="cartcenter" >
+                            {{this.cartService.getPriceProductsItem(item) }}
                         </td>
                         
-                        <td><button  class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></td>
+                        <td class="cartcenter"><button  class="btn btn-danger" (click)="removeItem(item)"><i class="fas fa-trash-alt"></i></button></td>
+                        
                     </tr>
+                    
                     <tr>
                         <td colspan="6">
                                 <div class="flex gap-20" style="padding-left:350px;">
                                 <div><button (click)="emptycart()" class="btn btn-danger" >Empty Cart</button></div>
-                                <div><button routerLink="/products" class="btn btn-primary">Shop More</button></div>
+                                <div><button routerLink="" class="btn btn-primary">Shop More</button></div>
                                
                             </div>
                             </td>
@@ -44,7 +43,7 @@
                 </tbody>
             </table>
         </div>
-        <div style="width:300px;border:1px solid black">
+        <div style="width:300px;background-color: rgb(205, 203, 203); border-radius:20px">
             <table class="table">
                 <thead>
                     <tr>
@@ -91,7 +90,7 @@
                     </tr>
                   <tr>
                     
-                        <td colspan="2"><button class="btn btn-success">Checkout</button></td>
+                        <td colspan="2"><button class="btn btn-success" (click)="ValiderPanier()">Checkout</button></td>
                     
                   </tr>
                 </tbody>
@@ -101,16 +100,16 @@
     </div>
     </ng-container>
 <ng-container *ngIf="Products?.length==0">
-<div class="container" style="margin-bottom: 200px;">
+<h2> {{this.message}}</h2>
+<div class="container" style="margin-bottom:200px;">
     <div class="card">
         <h5 class="card-title">My cart</h5>
     </div>
     <div class="center">
-       
        <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="">
        <h4>Your cart is empty!</h4>
        <h6>Add item to it now</h6>
-       <button routerLink="/products" class="btn btn-primary">Shop now</button>
+       <button routerLink="" class="btn btn-primary">Shop now</button>
     </div>
 </div>
 </ng-container>

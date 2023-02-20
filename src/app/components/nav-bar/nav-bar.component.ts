@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import * as $ from 'jquery';
 import { CartService } from 'src/app/services/cart.service';
 import { ProductsService } from 'src/app/services/products.service';
@@ -9,7 +10,7 @@ import { ProductsService } from 'src/app/services/products.service';
 })
 export class NavBarComponent {
   totalItem:number=0
-  constructor(private cartService:CartService){}
+  constructor(private cartService:CartService,private router: Router){}
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
@@ -26,5 +27,11 @@ this.cartService.getProducts()
 .subscribe(data=>{
   this.totalItem=data.length;
 })
+
+}
+navigate(){
+  this.router.navigate(["/panier"]);
+  //console.log("momo");
+  
 }
 }
