@@ -40,13 +40,13 @@ constructor(private p:CartService, private router :Router){}
     $("."+Product.id).hide();
     
   }
-  addCart(item:any){  
-this.p.getAddPanierProducts(item);
-this.p.getPriceProductsItem(item);
-this.p.getQuantityProducts(item);
-this.router.navigate(["/panier"]);
+  addCart(Product:any){  
+this.p.getAddPanierProducts(Product);
+this.p.getPriceProductsItem(Product);
+this.p.getQuantityProducts(Product);
+this.router.navigate(["/panier"]); 
   }
-
+ 
 
 
 
