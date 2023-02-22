@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
 .site
 {
+   --main-color:#008080;
+   --main-color-white:white;
+   --main-color-gray:gray;
+   --main-color-black:#1d1d1d;
+   --main-color-orange:orange;
+   --main-color-danger:red;
+   --main-color-success:#2ba968;
+   --main-color-footer:#212529;
+
     font-family: 'Holtwood One SC';
-    color: #e7480f;
-    text-shadow: 2px 2px #ffd301;
+    color:#008080;
+    text-shadow: 2px 2px orange;
     font-size: 40px;
    
 }
