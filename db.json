@@ -5,7 +5,7 @@
     {
         "id":"p1",
         "name":"Product1",
-        "price":5933,
+        "price":199,
         "description":"Pantalon pret",
         "category":"Pantalon",
         "images":[
@@ -17,8 +17,8 @@
     {
         "id":"p2",
         "name":"Product2",
-        "price":5933,
-        "description":"Pantalon pret",
+        "price":189,
+        "description":"DATTERO PANTALONE - Pantalon",
         "category":"Pantalon",
         "images":[
             "/assets/Image_Amoza/Pantalons/j2.jpg",
@@ -29,8 +29,8 @@
     {
         "id":"p3",
         "name":"Product3",
-        "price":5933,
-        "description":"Patanlon pret",
+        "price":389,
+        "description":"PANTALONE YARA -Jeans décontractés",
         "category":"Pantalon",
         "images":[
             "/assets/Image_Amoza/Pantalons/j3.jpg",
@@ -41,8 +41,8 @@
     {
         "id":"p4",
         "name":"Product4",
-        "price":5933,
-        "description":"Pantalon pret",
+        "price":799,
+        "description":"PANTALONE YARA 2",
         "category":"Pantalon",
         "images":[
             "/assets/Image_Amoza/Pantalons/j4.jpg",
@@ -53,8 +53,8 @@
     {
         "id":"p5",
         "name":"Product5",
-        "price":5933,
-        "description":"Chemise pret",
+        "price":499,
+        "description":"ROBE - Vêtements d’occasion",
         "category":"Chemise",
         "images":[
             "/assets/Image_Amoza/Pantalons/j5.jpg",
@@ -64,7 +64,7 @@
     {
         "id":"p6",
         "name":"Product6",
-        "price":5933,
+        "price":599,
         "description":"Robe pret",
         "category":"Robe",
         "images":[
@@ -75,8 +75,8 @@
     {
         "id":"p7",
         "name":"Product7",
-        "price":5933,
-        "description":"Robe pret",
+        "price":499,
+        "description":"OAKLIEIW ROBE COAT - Manteau classique  ",
         "category":"Robe",
         "images":[
             "/assets/Image_Amoza/Robes/R2.jpg",
@@ -86,8 +86,8 @@
     {
         "id":"p8",
         "name":"Product8",
-        "price":5933,
-        "description":"Robe pret",
+        "price":689,
+        "description":"Robe turk",
         "category":"Robe",
         "images":[
             "/assets/Image_Amoza/Robes/R3.jpg",
@@ -98,7 +98,7 @@
         "id":"p9",
         "name":"Product9",
         "price":5933,
-        "description":"Robe pret",
+        "description":"Robe classique Usa",
         "category":"Robe",
         "images":[
             "/assets/Image_Amoza/Robes/R4.jpg",
@@ -108,8 +108,8 @@
     {
         "id":"p10",
         "name":"Product10",
-        "price":5933,
-        "description":"Robe pret",
+        "price":499,
+        "description":"Robe de cocktail ",
         "category":"Robe",
         "images":[
             "/assets/Image_Amoza/Robes/R5.jpg",
@@ -120,7 +120,7 @@
         
         "id":"p11",
         "name":"Product11",
-        "price":5933,
+        "price":899,
         "description":"Manteau pret",
         "category":"Manteau",
      
@@ -132,8 +132,8 @@
     {
         "id":"p12",
         "name":"Product12",
-        "price":5033,
-        "description":"Manteau pret",
+        "price":780,
+        "description":"MANTEAU  ",
         "category":"Manteau",
         
         "images":[
@@ -144,19 +144,20 @@
     {
         "id":"p13",
         "name":"Product13",
-        "description":"Manteau pret",
+        "price":880,
+        "description":"ROBE FLORALE - Robe de chambre",
         "category":"Manteau",
        
         "images":[
             "/assets/Image_Amoza/Manteau/M3.jpg",
             "/assets/Image_Amoza/Manteau/M33.jpg"
          ]  
-    },
+    }, 
     {
         "id":"p14",
         "name":"Product14",
-        "price":5933,
-        "description":"Manteau pret",
+        "price":1099,
+        "description":"Manteau Normale",
         "category":"Manteau",
         
         "images":[
@@ -167,8 +168,8 @@
     {
         "id":"p15",
         "name":"Product15",
-        "price":5933,
-        "description":"Manteau pret",
+        "price":199,
+        "description":"Robe de chambre",
         "category":"Manteau",
        
         "images":[
@@ -180,8 +181,8 @@
     {
         "id":"p16",
         "name":"Product16",
-        "price":5933,
-        "description":"Lunette pret",
+        "price":399,
+        "description":"UNISEX - Lunettes de soleil",
         "category":"Lunette",
         "images":[
             "/assets/Image_Amoza/Lunettes/L1.jpg",
@@ -191,8 +192,8 @@
     {
         "id":"p17",
         "name":"Product17",
-        "price":5933,
-        "description":"Lunette pret",
+        "price":899,
+        "description":"Lunettes de soleil",
         "category":"Lunette",
         "images":[
             "/assets/Image_Amoza/Lunettes/L2.jpg",
@@ -213,8 +214,8 @@
     {
         "id":"p19",
         "name":"Product19",
-        "price":5933,
-        "description":"Lunette pret",
+        "price":699,
+        "description":"Lunettes de soleil 2",
         "category":"Lunette",
         "images":[
             "/assets/Image_Amoza/Lunettes/L4.jpg",
@@ -224,8 +225,8 @@
     {
         "id":"p20",
         "name":"Product20",
-        "price":5933,
-        "description":"Lunette pret",
+        "price":789,
+        "description":" Lunettes de soleil",
         "category":"Lunette",
         "images":[
             "/assets/Image_Amoza/Lunettes/L5.jpg",
@@ -235,7 +236,7 @@
     {
         "id":"p21",
         "name":"Product21",
-        "price":5933,
+        "price":699,
         "description":"TShirt pret",
         "category":"TShirt",
         "images":[
@@ -246,8 +247,8 @@
     {
         "id":"p22",
         "name":"Product22",
-        "price":5933,
-        "description":"TShirt pret",
+        "price":199,
+        "description":"T-shirt de base  ",
         "category":"TShirt",
         "images":[
             "/assets/Image_Amoza/TShirts/TS2.jpg",
@@ -257,8 +258,8 @@
     {
         "id":"p23",
         "name":"Product23",
-        "price":5933,
-        "description":"TShirt pret",
+        "price":789,
+        "description":"UNISEXE-ImprimerT-shirt",
         "category":"TShirt",
         "images":[
             "/assets/Image_Amoza/TShirts/TS3.jpg",
@@ -268,7 +269,7 @@
     {
         "id":"p24",
         "name":"Product24",
-        "price":5933,
+        "price":299,
         "description":"TShirt pret",
         "category":"TShirt",
         "images":[
@@ -279,8 +280,8 @@
     {
         "id":"p25",
         "name":"Product25",
-        "price":5933,
-        "description":"TShirt pret",
+        "price":299,
+        "description":"UNISEX -T-shirt basique",
         "category":"TShirt",
         "images":[
             "/assets/Image_Amoza/TShirts/TS5.jpg",
@@ -290,7 +291,7 @@
     {
         "id":"p26",
         "name":"Product26",
-        "price":5933,
+        "price":99,
         "description":"Casquette pret",
         "category":"Casquette",
         "images":[
@@ -301,8 +302,8 @@
     {
         "id":"p27",
         "name":"Product27",
-        "price":5933,
-        "description":"Casquette pret",
+        "price":89,
+        "description":"Casquette classique ",
         "category":"Casquette",
         "images":[
             "/assets/Image_Amoza/Casquettes/ca2.jpg",
@@ -312,8 +313,8 @@
     {
         "id":"p28",
         "name":"Product28",
-        "price":5933,
-        "description":"Casquette pret",
+        "price":69,
+        "description":"Casquette solile",
         "category":"Casquette",
         "images":[
             "/assets/Image_Amoza/Casquettes/ca3.jpg",
@@ -323,8 +324,8 @@
     {
         "id":"p29",
         "name":"Product29",
-        "price":5933,
-        "description":"Casquette pret",
+        "price":79,
+        "description":"Casquette normal",
         "category":"Casquette",
         "images":[
             "/assets/Image_Amoza/Casquettes/ca4.jpg",
@@ -334,8 +335,8 @@
     {
         "id":"p30",
         "name":"Product30",
-        "price":5933,
-        "description":"Casquette pret",
+        "price":69,
+        "description":"TRUCKER BOSTON UNISEX - Cap  ",
         "category":"Casquette",
         "images":[
             "/assets/Image_Amoza/Casquettes/ca5.jpg",
@@ -345,8 +346,8 @@
     {
         "id":"p31",
         "name":"Product31",
-        "price":5933,
-        "description":"Chaussette pret",
+        "price":29,
+        "description":"Chaussette Normale",
         "category":"Chaussette",
         "images":[
             "/assets/Image_Amoza/Chaussettes/CH1.jpg",
@@ -356,8 +357,8 @@
     {
         "id":"p32",
         "name":"Product32",
-        "price":5933,
-        "description":"Chaussette pret",
+        "price":15,
+        "description":"CHAUSSETTES REMBOURRÉES TRÈFLE 3",
         "category":"Chaussette",
         "images":[
             "/assets/Image_Amoza/Chaussettes/CH2.jpg",
@@ -367,8 +368,8 @@
     {
         "id":"p33",
         "name":"Product33",
-        "price":5933,
-        "description":"Chaussette pret",
+        "price":9,
+        "description":"Chaussette normale",
         "category":"Chaussette",
         "images":[
             "/assets/Image_Amoza/Chaussettes/CH3.jpg",
@@ -379,8 +380,8 @@
     {
         "id":"p34",
         "name":"Product34",
-        "price":5933,
-        "description":"Chaussette pret",
+        "price":19,
+        "description":"CHAUSSETTES REMBOURRÉES TRÈFLE 2 ",
         "category":"Chaussette",
         "images":[
             "/assets/Image_Amoza/Chaussettes/CH4.jpg",
@@ -390,8 +391,8 @@
     {
         "id":"p35",
         "name":"Product35",
-        "price":5933,
-        "description":"Chaussette pret",
+        "price":9,
+        "description":"CHAUSSETTES REMBOURRÉES TRÈFLE    ",
         "category":"Chaussette",
         "images":[
             "/assets/Image_Amoza/Chaussettes/CH5.jpg",
@@ -401,8 +402,8 @@
     {
         "id":"p36",
         "name":"Product36",
-        "price":5933,
-        "description":"Talon pret",
+        "price":119,
+        "description":"Talon Normale",
         "category":"Talon",
         "images":[
             "/assets/Image_Amoza/Talons/T1.jpg",
@@ -413,8 +414,8 @@
     {
         "id":"p37",
         "name":"Product37",
-        "price":5933,
-        "description":"Talon pret",
+        "price":89,
+        "description":"Talon classique ",
         "category":"Talon",
         "images":[
             "/assets/Image_Amoza/Talons/T2.jpg",
@@ -424,8 +425,8 @@
     {
         "id":"p38",
         "name":"Product38",
-        "price":5933,
-        "description":"Talon pret",
+        "price":189,
+        "description":"Sandales à talons hauts",
         "category":"Talon",
         "images":[
             "/assets/Image_Amoza/Talons/T3.jpg",
@@ -435,8 +436,8 @@
     {
         "id":"p39",
         "name":"Product39",
-        "price":5933,
-        "description":"Talon pret",
+        "price":299,
+        "description":"Sandales à talons hauts turk",
         "category":"Talon",
         "images":[
             "/assets/Image_Amoza/Talons/T4.jpg",
@@ -446,8 +447,8 @@
     {
         "id":"p40",
         "name":"Product40",
-        "price":5933,
-        "description":"Talon pret",
+        "price":89,
+        "description":"Talon Normale 2",
         "category":"Talon",
         "images":[
             "/assets/Image_Amoza/Talons/T5.jpg",
@@ -457,8 +458,8 @@
     {
         "id":"p41",
         "name":"Product41",
-        "price":5933,
-        "description":"Sacs pret",
+        "price":188,
+        "description":"Sacs Normale 1",
         "category":"Sacs",
         "images":[
             "/assets/Image_Amoza/Sacs/SA1.jpg",
@@ -468,8 +469,8 @@
     {
         "id":"p42",
         "name":"Product42",
-        "price":5933,
-        "description":"Sacs pret",
+        "price":89,
+        "description":"Sacs Normale",
         "category":"Sacs",
         "images":[
             "/assets/Image_Amoza/Sacs/SA2.jpg",
@@ -479,8 +480,8 @@
     {
         "id":"p43",
         "name":"Product43",
-        "price":5933,
-        "description":"Sacs pret",
+        "price":89,
+        "description":"Sacs II",
         "category":"Sacs",
         "images":[
             "/assets/Image_Amoza/Sacs/SA3.jpg",
@@ -490,8 +491,8 @@
     {
         "id":"p44",
         "name":"Product44",
-        "price":5933,
-        "description":"Sacs pret",
+        "price":799,
+        "description":"Sacs normale",
         "category":"Sacs",
         "images":[
             "/assets/Image_Amoza/Sacs/SA4.jpg",
@@ -502,7 +503,7 @@
         "id":"p45",
         "name":"Product45",
         "price":5933,
-        "description":"Sacs pret",
+        "description":"Sacs classique ",
         "category":"Sacs",
         "images":[
             "/assets/Image_Amoza/Sacs/SA5.jpg",
@@ -513,7 +514,7 @@
         "id":"p46",
         "name":"Product46",
         "price":5933,
-        "description":"Pantalon pret",
+        "description":"Pantalon Askal",
         "category":"Pantalon",
         "images":[
            "/assets/Image_Amoza/Pantalons/j6.jpg",
@@ -524,8 +525,8 @@
     {
         "id":"p47",
         "name":"Product47",
-        "price":5933,
-        "description":"Pantalon pret",
+        "price":799,
+        "description":"Pantalon normale ",
         "category":"Pantalon",
         "images":[
            "/assets/Image_Amoza/Pantalons/j7.jpg",
@@ -536,8 +537,8 @@
     {
         "id":"p48",
         "name":"Product48",
-        "price":5933,
-        "description":"Pantalon pret",
+        "price":899,
+        "description":"Pantalon colaII",
         "category":"Pantalon",
         "images":[
            "/assets/Image_Amoza/Pantalons/j8.jpg",
@@ -547,8 +548,8 @@
     },  {
         "id":"p49",
         "name":"Product49",
-        "price":5933,
-        "description":"Pantalon pret",
+        "price":900,
+        "description":"Pantalon classique  ",
         "category":"Pantalon",
         "images":[
            "/assets/Image_Amoza/Pantalons/j9.jpg",
@@ -559,8 +560,8 @@
     {
         "id":"p50",
         "name":"Product50",
-        "price":5933,
-        "description":"Robe pret",
+        "price":789,
+        "description":"Robe normal ",
         "category":"Robe",
         "images":[
             "/assets/Image_Amoza/Robes/R6.jpg",
@@ -570,8 +571,8 @@
     {
         "id":"p51",
         "name":"Product51",
-        "price":5933,
-        "description":"Robe pret",
+        "price":899,
+        "description":"Robe classique matra",
         "category":"Robe",
         "images":[
             "/assets/Image_Amoza/Robes/R7.jpg",
@@ -581,8 +582,8 @@
     {
         "id":"p52",
         "name":"Product52",
-        "price":5933,
-        "description":"Robe pret",
+        "price":789,
+        "description":"Robe zargos ",
         "category":"Robe",
         "images":[
             "/assets/Image_Amoza/Robes/R8.jpg",
@@ -592,8 +593,8 @@
     {
         "id":"p53",
         "name":"Product53",
-        "price":5933,
-        "description":"Robe pret",
+        "price":699,
+        "description":"Robe aletar ",
         "category":"Robe",
         "images":[
             "/assets/Image_Amoza/Robes/R9.jpg",
@@ -604,8 +605,8 @@
         
         "id":"p54",
         "name":"Product54",
-        "price":5933,
-        "description":"Manteau pret",
+        "price":1009,
+        "description":"Manteau classique saragh ",
         "category":"Manteau",
      
         "images":[
@@ -617,8 +618,8 @@
         
         "id":"p55",
         "name":"Product55",
-        "price":5933,
-        "description":"Manteau pret",
+        "price":1299,
+        "description":"Manteau classique Awdkagh ",
         "category":"Manteau",
      
         "images":[
@@ -630,8 +631,8 @@
         
         "id":"p56",
         "name":"Product56",
-        "price":5933,
-        "description":"Manteau pret",
+        "price":400,
+        "description":"Manteau normale 2 ",
         "category":"Manteau",
      
         "images":[
@@ -643,8 +644,8 @@
         
         "id":"p57",
         "name":"Product57",
-        "price":5933,
-        "description":"Manteau pret",
+        "price":299,
+        "description":"Manteau classique turk",
         "category":"Manteau",
      
         "images":[
@@ -655,8 +656,8 @@
     {
         "id":"p58",
         "name":"Product58",
-        "price":5933,
-        "description":"Lunette pret",
+        "price":50,
+        "description":"Lunette normale 4 ",
         "category":"Lunette",
         "images":[
             "/assets/Image_Amoza/Lunettes/L6.jpg",
@@ -666,8 +667,8 @@
     {
         "id":"p59",
         "name":"Product59",
-        "price":5933,
-        "description":"Lunette pret",
+        "price":55,
+        "description":"Lunette normale",
         "category":"Lunette",
         "images":[
             "/assets/Image_Amoza/Lunettes/L7.jpg",
@@ -677,8 +678,8 @@
     {
         "id":"p60",
         "name":"Product60",
-        "price":5933,
-        "description":"Lunette pret",
+        "price":65,
+        "description":"Lunettes de soleil",
         "category":"Lunette",
         "images":[
             "/assets/Image_Amoza/Lunettes/L8.jpg",
@@ -688,8 +689,8 @@
     {
         "id":"p61",
         "name":"Product61",
-        "price":5933,
-        "description":"Lunette pret",
+        "price":90,
+        "description":"Lunette classique ",
         "category":"Lunette",
         "images":[
             "/assets/Image_Amoza/Lunettes/L9.jpg",
@@ -699,8 +700,8 @@
     {
         "id":"p62",
         "name":"Product62",
-        "price":5933,
-        "description":"TShirt pret",
+        "price":99,
+        "description":"TShirt sport   ",
         "category":"TShirt",
         "images":[
             "/assets/Image_Amoza/TShirts/TS6.jpg",
@@ -710,8 +711,8 @@
     {
         "id":"p63",
         "name":"Product63",
-        "price":5933,
-        "description":"TShirt pret",
+        "price":90,
+        "description":"TShirt classique ",
         "category":"TShirt",
         "images":[
             "/assets/Image_Amoza/TShirts/TS7.jpg",
@@ -721,8 +722,8 @@
     {
         "id":"p64",
         "name":"Product64",
-        "price":5933,
-        "description":"TShirt pret",
+        "price":99,
+        "description":"TShirt sport foot-balle  ",
         "category":"TShirt",
         "images":[
             "/assets/Image_Amoza/TShirts/TS8.jpg",
@@ -732,8 +733,8 @@
     {
         "id":"p65",
         "name":"Product65",
-        "price":5933,
-        "description":"TShirt pret",
+        "price":90,
+        "description":"TShirt sport ",
         "category":"TShirt",
         "images":[
             "/assets/Image_Amoza/TShirts/TS9.jpg",
@@ -743,8 +744,8 @@
     {
         "id":"p66",
         "name":"Product66",
-        "price":5933,
-        "description":"Casquette pret",
+        "price":60,
+        "description":"Casquette normal",
         "category":"Casquette",
         "images":[
             "/assets/Image_Amoza/Casquettes/ca6.jpg",
@@ -754,8 +755,8 @@
     {
         "id":"p67",
         "name":"Product67",
-        "price":5933,
-        "description":"Casquette pret",
+        "price":50,
+        "description":"Casquette sport tennis ",
         "category":"Casquette",
         "images":[
             "/assets/Image_Amoza/Casquettes/ca7.jpg",
@@ -765,8 +766,8 @@
     {
         "id":"p68",
         "name":"Product68",
-        "price":5933,
-        "description":"Casquette pret",
+        "price":50,
+        "description":"Casquette sport 2 ",
         "category":"Casquette",
         "images":[
             "/assets/Image_Amoza/Casquettes/ca8.jpg",
@@ -776,8 +777,8 @@
     {
         "id":"p69",
         "name":"Product69",
-        "price":5933,
-        "description":"Chaussette pret",
+        "price":55,
+        "description":"Chaussette classique ",
         "category":"Chaussette",
         "images":[
             "/assets/Image_Amoza/Chaussettes/CH6.jpg",
@@ -787,8 +788,8 @@
     {
         "id":"p70",
         "name":"Product70",
-        "price":5933,
-        "description":"Chaussette pret",
+        "price":25,
+        "description":"Chaussette sport hand-balle",
         "category":"Chaussette",
         "images":[
             "/assets/Image_Amoza/Chaussettes/CH7.jpg",
@@ -798,8 +799,8 @@
     {
         "id":"p71",
         "name":"Product71",
-        "price":5933,
-        "description":"Chaussette pret",
+        "price":78,
+        "description":"Chaussette sport foot-balle",
         "category":"Chaussette",
         "images":[
             "/assets/Image_Amoza/Chaussettes/CH8.jpg",
@@ -809,8 +810,8 @@
     {
         "id":"p72",
         "name":"Product72",
-        "price":5933,
-        "description":"Chaussette pret",
+        "price":9,
+        "description":"Chaussette sport 3",
         "category":"Chaussette",
         "images":[
             "/assets/Image_Amoza/Chaussettes/CH9.jpg",
@@ -821,7 +822,7 @@
         "id":"p73",
         "name":"Product73",
         "price":5933,
-        "description":"Talon pret",
+        "description":"Talon super aslk",
         "category":"Talon",
         "images":[
             "/assets/Image_Amoza/Talons/T6.jpg",
@@ -833,7 +834,7 @@
         "id":"p74",
         "name":"Product74",
         "price":5933,
-        "description":"Talon pret",
+        "description":"Talon Normale 5",
         "category":"Talon",
         "images":[
             "/assets/Image_Amoza/Talons/T7.jpg",
@@ -845,7 +846,7 @@
         "id":"p75",
         "name":"Product75",
         "price":5933,
-        "description":"Talon pret",
+        "description":"Talon classique 4 " ,
         "category":"Talon",
         "images":[
             "/assets/Image_Amoza/Talons/T8.jpg",
@@ -857,7 +858,7 @@
         "id":"p76",
         "name":"Product76",
         "price":5933,
-        "description":"Talon pret",
+        "description":"Talon Normale 5 ",
         "category":"Talon",
         "images":[
             "/assets/Image_Amoza/Talons/T9.jpg",
@@ -869,7 +870,7 @@
         "id":"p77",
         "name":"Product77",
         "price":5933,
-        "description":"Sacs pret",
+        "description":"Sac Classique 4",
         "category":"Sacs",
         "images":[
             "/assets/Image_Amoza/Sacs/SA6.jpg",
@@ -880,7 +881,7 @@
         "id":"p78",
         "name":"Product78",
         "price":5933,
-        "description":"Sacs pret",
+        "description":"Sac Normale 3",
         "category":"Sacs",
         "images":[
             "/assets/Image_Amoza/Sacs/SA7.jpg",
@@ -890,8 +891,8 @@
     {
         "id":"p79",
         "name":"Product79",
-        "price":5933,
-        "description":"Sacs pret",
+        "price":89,
+        "description":"Sacs Classique 2",
         "category":"Sacs",
         "images":[
             "/assets/Image_Amoza/Sacs/SA8.jpg",
