@@ -13,6 +13,7 @@ import { ProductsService } from 'src/app/services/products.service';
 export class ProductListComponent {
   Produit:Product[]=[] ;
   Products:Product[]=[] ;
+  products:any
   RandProduct:Product[]=[] ;
   RandProduct2:Product[]=[] ;
   productsSub: Subscription | undefined
@@ -40,27 +41,34 @@ export class ProductListComponent {
       return false;
     }
 
+    /*this.produitService.getAllProducts().subscribe(
+      data=>{
+        this.products=data
+        console.log(this.products)
+      }
+    )*/
 
 
-    /*this.produitService.getAllProducts()
+    this.produitService.getAllProducts()
     .subscribe((value:Product[])=>{
       this.Produit=value
-     // console.log(this.Produit);
-    })*/
+      console.log(this.Produit);
+    })
+ /* 
   this.productsSub=this.produitService.getbyCatProducts("Manteau")
     .subscribe({
       next:(value:Product[])=>{
-        this.Produit=value
+        this.Products=value
 
         //console.log(this.Produit[0]);
 
-        /* for(this.i=0;this.i<4;this.i++){
+         for(this.i=0;this.i<4;this.i++){
           
           this.RandProduct[this.i]=this.Produit[this.i];
                
               
         }
-        console.log(this.RandProduct); */
+        console.log(this.RandProduct); 
         
 
       },
@@ -95,7 +103,8 @@ export class ProductListComponent {
       {
         next:(value:Product[])=>{
           this.Products=value
-         
+          console.log("hhhh"+this.Products);
+          
          for(this.i=0;this.i<8;this.i++){
           this.j=Math.floor(Math.random() * 45);
            
@@ -132,7 +141,7 @@ export class ProductListComponent {
           
         } 
       }
-    )
+    ) */
 
 
 
@@ -176,8 +185,4 @@ export class ProductListComponent {
   }
   */
   
-
-}
-
-
-
+  }
