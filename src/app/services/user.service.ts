@@ -21,6 +21,12 @@ export class UserService{
 
    register(client: User) {
       return this.http.post('http://localhost:3000/clients', client);
+      console.log("fgggggg");
     }
 
+
+    registesr(client: User) {
+      return this.http.post('http://localhost:3000/clients', client);
+      console.log("fgggggg");
+    }
 }

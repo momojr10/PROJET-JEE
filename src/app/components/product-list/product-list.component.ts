@@ -51,6 +51,7 @@ export class ProductListComponent {
     .subscribe({
       next:(value:Product[])=>{
         this.Produit=value
+        console.log(value);
 
         //console.log(this.Produit[0]);
 
@@ -133,6 +134,30 @@ export class ProductListComponent {
         } 
       }
     )
+
+
+
+    
+    this.productsSub=this.produitService.getRandomProducts()
+    .subscribe({
+      next:(value:Product[])=>{
+         console.log(value);
+         console.log("lalaho");
+
+      },
+      error:(error:any)=>{
+        console.log(error);  
+      },
+      complete:()=>{
+        //console.log("Completed");
+  
+      }
+    })
+
+
+   
+
+
 
 
 

@@ -7,11 +7,14 @@ input{
 
 
 .container{
-  margin-top: 100px;
-  transform: translate(28%);
+  
+  transform: translate(0);
   display: grid;
   grid-template-rows: auto auto auto auto auto auto ;
   gap:18px;
+  background-color: red;
+  width: 470px;
+  margin: 130px auto;
 }
 
 
