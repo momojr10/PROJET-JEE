@@ -15,9 +15,9 @@
                 </thead>
                 <tbody>
                     <tr *ngFor="let item of Products;let i=index">
-                        <td><img style="width: 120px;" src="{{item.images[0]}}" alt="" width="100px" height="100px"></td>
+                        <td><img style="width: 120px;" src="/assets/Image_Amoza/{{item.images[0].imageName}}" alt="" width="100px" height="100px"></td>
                        
-                        <td  class="cartcenter">{{item.description}}jjjjjjjjjjjjjjjjjjjjjj</td>
+                        <td  class="cartcenter">{{item.description}}</td>
                         <td class="cartcenter"><div style="width:100px;text-align:center;">
                             <input  type="text" value="{{this.cartService.getQuantityProducts(item) }}" style="text-align:center;"  class="form-control"    aria-label="Recipient's username" aria-describedby="button-addon2">
                             <!--[(ngModel)]="Qproduct.quantite"  (click)="TotalPriceItem()" ! -->
