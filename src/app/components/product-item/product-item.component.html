@@ -2,14 +2,14 @@
 
 <div id="items" class="borde"  (mouseenter)="enterF(Product)" (mouseleave)="leave(Product)">
   <div class="relative" >
-        <img class="{{Product.nom}}" src="/assets/Image_Amoza/{{Product.image[0].imageName}}" alt="">
+        <img class="{{Product.name}}" src="/assets/Image_Amoza/{{Product.images[0].imageName}}" alt="">
           <div class="desc">{{Product.description}}</div>
           <span class="badge hot absolute">hot</span>
           <span class="badge sold absolute">-20%</span>
           <div class="price">
-           {{Product.prix}} &dollar;
+           {{Product.price}} &dollar;
           </div>
-        <div  class="{{Product.ref}}" id="card"  hidden>
+        <div  class="{{Product.id}}" id="card"  hidden>
             <div   id="box1" (click)="addCart(Product)">Add To Card</div>
 
             <div   id="box2" ><i class="fa-regular fa-heart"></i></div>

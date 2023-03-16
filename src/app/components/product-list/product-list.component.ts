@@ -49,16 +49,17 @@ export class ProductListComponent {
     )*/
 
 
-    this.produitService.getAllProducts()
+/*     this.produitService.getAllProducts()
     .subscribe((value:Product[])=>{
       this.Produit=value
       console.log(this.Produit);
-    })
- /* 
-  this.productsSub=this.produitService.getbyCatProducts("Manteau")
+    }) */
+ 
+/*   this.productsSub=this.produitService.getbyCatProducts("Manteau")
     .subscribe({
       next:(value:Product[])=>{
         this.Products=value
+        
 
         //console.log(this.Produit[0]);
 
@@ -79,7 +80,7 @@ export class ProductListComponent {
         //console.log("Completed");
   
       }
-    })
+    }) */
 
     
 
@@ -106,12 +107,12 @@ export class ProductListComponent {
           console.log("hhhh"+this.Products);
           
          for(this.i=0;this.i<8;this.i++){
-          this.j=Math.floor(Math.random() * 45);
+          this.j=Math.floor(Math.random()*78);
            
                 
           while(existsInArray(this.j,this.tableau)) {
                   
-            this.j=Math.floor(Math.random() * 45);
+            this.j=Math.floor(Math.random()*78);
           } 
 
           this.tableau.push(this.j);
@@ -120,11 +121,11 @@ export class ProductListComponent {
         } 
 
         for(this.k=0;this.k<6;this.k++){
-          this.l=Math.floor(Math.random() * 45);
+          this.l=Math.floor(Math.random()*78);
               
           while(existsInArray(this.l,this.tableau)) {
                   
-            this.l=Math.floor(Math.random() * 45);
+            this.l=Math.floor(Math.random()*78);
           } 
 
           this.tableau.push(this.l);
@@ -141,7 +142,7 @@ export class ProductListComponent {
           
         } 
       }
-    ) */
+    ) 
 
 
 

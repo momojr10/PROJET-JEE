@@ -27,17 +27,17 @@ constructor(private p:CartService, private router :Router){}
   enterF(Product:any){
     // console.log(Produit.id);
      
-   $("."+Product.nom).attr("src","/assets/Image_Amoza/"+Product.image[1].imageName);
-   $("."+Product.ref).removeAttr("hidden");
-   $("."+Product.ref).show();
+   $("."+Product.name).attr("src","/assets/Image_Amoza/"+Product.images[1].imageName);
+   $("."+Product.id).removeAttr("hidden");
+   $("."+Product.id).show();
    
   
   } 
 
   leave(Product:any){
-    //console.log(Produit.id);
-    $("."+Product.nom).attr("src","/assets/Image_Amoza/"+Product.image[0].imageName);
-    $("."+Product.ref).hide();
+   
+    $("."+Product.name).attr("src","/assets/Image_Amoza/"+Product.images[0].imageName);
+    $("."+Product.id).hide();
     
   }
   addCart(Product:any){  
