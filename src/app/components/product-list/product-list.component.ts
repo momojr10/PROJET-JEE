@@ -58,7 +58,6 @@ export class ProductListComponent {
 /*   this.productsSub=this.produitService.getbyCatProducts("Manteau")
     .subscribe({
       next:(value:Product[])=>{
-        this.Products=value
         
 
         //console.log(this.Produit[0]);
@@ -143,6 +142,30 @@ export class ProductListComponent {
         } 
       }
     ) 
+
+
+
+    
+    this.productsSub=this.produitService.getRandomProducts()
+    .subscribe({
+      next:(value:Product[])=>{
+         console.log(value);
+         console.log("lalaholllllllllllllllllllllllllllllll");
+
+      },
+      error:(error:any)=>{
+        console.log(error);  
+      },
+      complete:()=>{
+        //console.log("Completed");
+  
+      }
+    })
+
+
+   
+
+
 
 
 
