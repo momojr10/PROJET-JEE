@@ -10,8 +10,16 @@ export class ProductsService{
   static getPanierProducts(produit: any) {
     throw new Error('Method not implemented.');
   }
+
 private url_cat:string="http://localhost:8080/category";
+
+
+
+ 
+private listproduct2:string="http://localhost:8080/produit";   
+
 private listproduct:string="http://localhost:8080/produit";   
+
 private listparcategory?:string;
 private listcat:any
 constructor(private http:HttpClient){
@@ -24,6 +32,20 @@ getAllProducts():Observable<Product[]>{
   return this.http.get<any>(this.url_cat);
  }
 
+ getRandomProducts(): Observable<Product[]>{
+  return this.http.get<Product[]>(this.listproduct2)
+   
+ }
+
+
+
+
+
+
+
+
+
+
  getbyCatProducts(Name:any): Observable<Product[]>{
     this.listparcategory='http://localhost:8080/produit/'+Name+'';
     return this.http.get<Product[]>(this.listparcategory)
@@ -32,7 +54,11 @@ getAllProducts():Observable<Product[]>{
   return this.http.get(url);
 }
 }
-
+var Moi:string[]=[]
+function name(params:string) {
+   Moi.push(params)
+   console.log(Moi); 
+ }
  //name("Mohamed")
  //name("Mama")
 

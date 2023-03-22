@@ -1,16 +1,3 @@
- 
- span.badge.sold{
-    top: 40px;
-    background-color:red;
- }
- span.badge.hot{
-    top: 10px;
-    background-color:#2ba968;
-    text-transform: uppercase;
-}
- .borde{
-    border-radius: 20px;
- }
  #items{
     width: 300px;
     height: 450px;

@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { User } from 'src/app/model/User';
-import { UserService } from 'src/app/services/user.service';
+
+import { UserService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-inscription',
@@ -12,7 +12,7 @@ import { UserService } from 'src/app/services/user.service';
 export class InscriptionComponent {
 
 
-  client!: User;
+
   signinForm:FormGroup ;
   email:FormControl ;
   password: FormControl ;
