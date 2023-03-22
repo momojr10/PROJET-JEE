@@ -7,11 +7,11 @@
      </div>
      
     <div class="input1">
-      <div> <label for="Email1" class="form-label">Email address</label> </div> 
-       <input type="email"  id="Email1" name="email" [formControl]="email">
+      <div> <label for="Email1" class="form-label">Username</label> </div> 
+       <input type="email"  id="Email1" name="email" [formControl]="username">
      </div>
 
-     <div class="error"  *ngIf="email.dirty && !email.valid">
+     <div class="error"  *ngIf="username.dirty && !username.valid">
       Please enter valid email
      </div>
 

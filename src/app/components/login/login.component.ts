@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { User } from 'src/app/model/User';
-import { UserService } from 'src/app/services/user.service';
+import { user } from 'src/app/model/user.model';
+import { UserService } from 'src/app/services/users.service';
+import { Authentication } from 'src/app/services/authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,23 +13,26 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class LoginComponent {
 
-  user:User[]=[] ;
+  user:user[]=[] ;
   usersSub: Subscription | undefined
-  user2: User[]=[] ;
+  user2: user[]=[] ;
    ar:boolean;
 
+   public isAuthenticated:boolean | undefined;
+public userAuthenticated: any;
+
 signinForm:FormGroup ;
-email:FormControl ;
+username:FormControl ;
 password: FormControl ;
 
 
 
-constructor(private fb:FormBuilder,private userService:UserService){
-   this.email=fb.control("",[Validators.email,Validators.minLength(6)])
-  this.password=fb.control("",[Validators.required,Validators.minLength(6)]) 
+constructor(private fb:FormBuilder,private authService:Authentication,private router :Router){
+   this.username=fb.control("",[Validators.minLength(4)])
+  this.password=fb.control("",[Validators.required,Validators.minLength(4)]) 
   this.ar=false;
   this.signinForm=fb.group({
-  email:this.email,
+  email:this.username,
   password:this.password
  })
 
@@ -37,6 +42,40 @@ constructor(private fb:FormBuilder,private userService:UserService){
 
 }
 
+public login(username:string,password:string){
+
+
+  let user;
+  console.log("ffffffffffffffffffff");
+ 
+  this.user2.forEach(u=>{
+    if(u.name==username&&u.password==password){
+         user=u;
+    }
+  
+  });
+  
+  
+  
+  if(user){
+  
+  this.isAuthenticated=true;
+  this.userAuthenticated=user;
+  
+  }
+  
+  else{
+    this.isAuthenticated=false;
+    this.userAuthenticated=undefined;
+  
+  }
+  
+  
+  
+  
+  
+  }
+
 ngOnInit(): void {
   
   /*this.produitService.getAllProducts()
@@ -44,7 +83,7 @@ ngOnInit(): void {
     this.Produit=value
    // console.log(this.Produit);
   })*/
-this.usersSub=this.userService.getAllUsers()
+/*this.usersSub=this.userService.getAllUsers()
   .subscribe({
     next:(value:User[])=>{
       this.user=value;
@@ -68,7 +107,45 @@ this.usersSub=this.userService.getAllUsers()
     }
   })
    
+*/
 
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log("fffffffffffffffffffffffffffffffffffffffffffff");
+
+this.usersSub=this.authService.getAllUsers()
+.subscribe({
+  next:(value:user[])=>{
+    this.user2=value;
+     console.log(value);
+     console.log("lalahodddddddddddddddddddddd");
+
+  },
+  error:(error:any)=>{
+    console.log(error);  
+  },
+  complete:()=>{
+    //console.log("Completed");
+
+  }
+})
 
 
 
@@ -80,6 +157,12 @@ this.usersSub=this.userService.getAllUsers()
 
 
 
+  
+  
+  
+  
+  
+  
 
 
 
@@ -91,35 +174,16 @@ this.usersSub=this.userService.getAllUsers()
 
 handleSubmit(){
  
- let i=0;
- 
- let y=this.email.value.toString();
+ let y=this.username.value.toString();
  let z=this.password.value.toString();
 
- console.log(y);
- console.log(z);
- 
-
- for (let x=0;x<this.user.length;x++) {
-    
-
-       if(this.user[x].email==y &&z==this.user[x].password){
-                     
-                  i++;
-        }           
-        
-  };
-
-  if(i==0){
-    this.ar=true;
-  }
-  else{
-    this.ar=false;
-  }
-
-  console.log(i);
+ this.login(y,z);
   
-  
+  if(this.isAuthenticated){
+     
+    this.router.navigateByUrl('');
+
+  }
 }
 
 

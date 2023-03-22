@@ -2,7 +2,7 @@
 
 <div id="items" class="borde"  (mouseenter)="enterF(Product)" (mouseleave)="leave(Product)">
   <div class="relative" >
-        <img class="{{Product.name}}" src={{Product.images[0]}} alt="">
+        <img class="{{Product.name}}" src="/assets/Image_Amoza/{{Product.images[0].imageName}}" alt="">
           <div class="desc">{{Product.description}}</div>
           <span class="badge hot absolute">hot</span>
           <span class="badge sold absolute">-20%</span>

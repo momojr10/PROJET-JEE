@@ -27,7 +27,7 @@ constructor(private p:CartService, private router :Router){}
   enterF(Product:any){
     // console.log(Produit.id);
      
-   $("."+Product.name).attr("src",Product.images[1]);
+   $("."+Product.name).attr("src","/assets/Image_Amoza/"+Product.images[1].imageName);
    $("."+Product.id).removeAttr("hidden");
    $("."+Product.id).show();
    
@@ -35,8 +35,8 @@ constructor(private p:CartService, private router :Router){}
   } 
 
   leave(Product:any){
-    //console.log(Produit.id);
-    $("."+Product.name).attr("src",Product.images[0]);
+   
+    $("."+Product.name).attr("src","/assets/Image_Amoza/"+Product.images[0].imageName);
     $("."+Product.id).hide();
     
   }
