@@ -17,6 +17,7 @@
 
 </div> -->
 
+<ng-container *ngIf="RandProduct2.length!=0 && RandProduct2.length!=0 && listproduct_parcat.length==0 ">
 
   <div class="container" >
     <div class="promo-container flex gap-10 jcc py-20">
@@ -142,13 +143,6 @@
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
  
 
-
-
-
-
-
-
-
 <div class="container" style="margin-top:-190px;">
  
  <div class="row">
@@ -186,12 +180,22 @@
       </div>
 
     </div>
-    </div>
-
-
-
+  </div>
 </div>
 
+</ng-container>
+<ng-container *ngIf="listproduct_parcat.length!=0">
+  <div class="container" style="padding:40px 19   0px; background-color:red;">
+    <div class="row">
+
+    <app-product-item class="items"  *ngFor="let Product of listproduct_parcat" [Product]="Product" > 
+      <div class="col-md-4">
+
+      </div>  
+    </app-product-item> 
+   </div>
+  </div>
+</ng-container>
 
 
 

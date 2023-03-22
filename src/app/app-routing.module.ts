@@ -7,22 +7,22 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { PagedashboardComponent } from './Pages/dashboard/pagedashboard.component';
 import { PagepanierComponent } from './Pages/pagepanier/pagepanier.component';
 import { LoginComponent } from './components/login/login.component';
+import { CategorieComponent } from './components/categorie/categorie.component';
 
 const routes: Routes = [
   {
     path:"",
-    component:PageaccueilComponent,
-    pathMatch:'full',
-    children:[
-      {
-        path:'pageaccueil', 
-        component:PageaccueilComponent
-      }
-    ]
+    redirectTo:'pageaccueil/produit',
+    pathMatch:'full'
   },
       {
         path:'dashboard', 
         component:PagedashboardComponent,
+        pathMatch:'full'
+      },
+       {
+        path:'pageaccueil/:name', 
+        component:PageaccueilComponent,
         pathMatch:'full'
       },
       {
@@ -34,6 +34,11 @@ const routes: Routes = [
         component:LoginComponent,
         pathMatch:'full'
       },
+      {
+        path:'cat', 
+        component:CategorieComponent,
+        pathMatch:'full'
+      }
 ];
 
 @NgModule({

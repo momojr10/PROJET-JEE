@@ -1,12 +1,12 @@
+import { Images } from "./image.model";
+
 export interface Product{
 
    id:number;
-   nom:string;
+   name:string;
    quantite:number;
-   prix:number;
+   price:number;
    description:string;
-   category:string;
-   image:string[];
-   imageName:String
-
+   categoryname:string;
+   images:Images[];
 }
