@@ -1,6 +1,6 @@
 footer{
     background-color: var(--main-color-footer);
-    color: var(--main-color-white);
+    color: rgb(207, 206, 206);
     margin-top: 50px;
 }
 footer .footer-item{
@@ -9,7 +9,7 @@ footer .footer-item{
 
 footer .footer-item h4{
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     margin:0;
 }
 footer .footer-item p{
@@ -17,7 +17,7 @@ footer .footer-item p{
 }
 footer .footer-list h2{
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 footer .footer-list{
     width: 300px;
@@ -28,8 +28,11 @@ footer .footer-list{
 /***************** FOOTER LIST *************/
 
 footer ul li{
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     padding: 5px 0;
+}
+footer ul li a{
+   text-decoration: none;
 }
 footer .footer-tags{
     display: flex;
@@ -39,10 +42,10 @@ footer .footer-tags{
 footer .footer-tags .tags{
     border: 1px solid var(--main-color-white);
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
 }
 footer .footer-subscribe p{
-    font-size: 1.1rem;
+    font-size:0.8rem;
 }
 footer input{
     width: 100%;
@@ -53,7 +56,7 @@ footer input{
     background-color: #37393b;
     color: rgb(228, 227, 227);
     padding-left: 10px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
 
 footer .footer-subscribe button.btn{
@@ -62,7 +65,7 @@ footer .footer-subscribe button.btn{
     border: none;
     outline: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     height: 45px;
     text-transform: uppercase;
     padding: 10px 20px;

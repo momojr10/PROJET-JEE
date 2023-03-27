@@ -22,6 +22,9 @@ import { PagedashboardComponent } from './Pages/dashboard/pagedashboard.componen
 import { PagepanierComponent } from './Pages/pagepanier/pagepanier.component';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AdminCompComponent } from './components/admin-comp/admin-comp.component';
+import { PageAdminComponent } from './Pages/page-admin/page-admin.component';
+import { EditComponentComponent } from './components/edit-component/edit-component.component';
 
 
 @NgModule({
@@ -40,7 +43,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 
     PageaccueilComponent,
     PagedashboardComponent,
-    PagepanierComponent
+    PagepanierComponent,
+    AdminCompComponent,
+    PageAdminComponent,
+    EditComponentComponent
 
   ],
   imports: [

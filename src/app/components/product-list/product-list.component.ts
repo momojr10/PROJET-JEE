@@ -1,5 +1,6 @@
 import { BuiltinType } from '@angular/compiler';
 import { Component } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Observable, Subscription } from 'rxjs';
 import { Product } from 'src/app/model/product.model';
@@ -18,7 +19,8 @@ export class ProductListComponent {
   RandProduct2:Product[]=[] ;
   productsSub: Subscription | undefined
   ProduitCate:Product[]=[] ;
-
+  listproduct_parcat:Product[]=[];
+  catsSub: Subscription | undefined;
   tableau:any[]=[];
   Momo:String="";
   i:any;
@@ -27,10 +29,11 @@ export class ProductListComponent {
   l:any;
 
 
-  constructor(private produitService:ProductsService){}
+  constructor(private produitService:ProductsService,private route:ActivatedRoute,private router:Router){}
     
   
   ngOnInit(): void {
+   
   
     function existsInArray(number: any, array: string | any[]) {
       for (var i = 0; i < array.length; i++) {
@@ -53,23 +56,18 @@ export class ProductListComponent {
     .subscribe((value:Product[])=>{
       this.Produit=value
       console.log(this.Produit);
-    }) */
+    }) 
  
-/*   this.productsSub=this.produitService.getbyCatProducts("Manteau")
+   this.productsSub=this.produitService.getbyCatProducts("Manteaux")
     .subscribe({
       next:(value:Product[])=>{
+
+        this.Produit=value
+
         
 
-        //console.log(this.Produit[0]);
+        console.log("hheeeee",this.Produit);
 
-         for(this.i=0;this.i<4;this.i++){
-          
-          this.RandProduct[this.i]=this.Produit[this.i];
-               
-              
-        }
-        console.log(this.RandProduct); 
-        
 
       },
       error:(error:any)=>{
@@ -79,10 +77,10 @@ export class ProductListComponent {
         //console.log("Completed");
   
       }
-    }) */
+    }) 
 
     
-
+*/
 
     $("#img1").hover(function(){
       $("#button1").css("visibility","visible");
@@ -98,54 +96,86 @@ export class ProductListComponent {
     }, function(){
       $("#button2").css("visibility","hidden");
   });
+  this.router.events.subscribe((val)=>{
+    if(val instanceof NavigationEnd){
+      let url=val.url;
+      console.log("url",url);
+      console.log("momo");
+      let p1=this.route.snapshot.params['name'];
+ // console.log("mom",p1);
 
-    this.productsSub=this.produitService.getAllProducts().subscribe(
-      {
-        next:(value:Product[])=>{
-          this.Products=value
-          console.log("hhhh"+this.Products);
-          
-         for(this.i=0;this.i<8;this.i++){
-          this.j=Math.floor(Math.random()*78);
-           
-                
-          while(existsInArray(this.j,this.tableau)) {
-                  
-            this.j=Math.floor(Math.random()*78);
-          } 
+//console.log("hhh"+this.route.snapshot.params['id']);
+if(p1=="produit"){
 
-          this.tableau.push(this.j);
-
-          this.RandProduct[this.i]=this.Products[this.j];    
-        } 
-
-        for(this.k=0;this.k<6;this.k++){
-          this.l=Math.floor(Math.random()*78);
+  this.productsSub=this.produitService.getAllProducts().subscribe(
+    {
+      next:(value:Product[])=>{
+        this.Products=value
+        //console.log("hhhh"+this.Products);
+        
+       for(this.i=0;this.i<8;this.i++){
+        this.j=Math.floor(Math.random()*78);
+         
               
-          while(existsInArray(this.l,this.tableau)) {
-                  
-            this.l=Math.floor(Math.random()*78);
-          } 
-
-          this.tableau.push(this.l);
-
-          this.RandProduct2[this.k]=this.Products[this.l];    
-        }
-       
-        },
-        error:(error:any)=>{
-          console.log(error);  
-        },
-        complete:()=>{
-          console.log("Completed");
-          
+        while(existsInArray(this.j,this.tableau)) {
+                
+          this.j=Math.floor(Math.random()*78);
         } 
+
+        this.tableau.push(this.j);
+
+        this.RandProduct[this.i]=this.Products[this.j];    
+      } 
+
+      for(this.k=0;this.k<6;this.k++){
+        this.l=Math.floor(Math.random()*78);
+            
+        while(existsInArray(this.l,this.tableau)) {
+                
+          this.l=Math.floor(Math.random()*78);
+        } 
+
+        this.tableau.push(this.l);
+
+        this.RandProduct2[this.k]=this.Products[this.l];    
       }
-    ) 
+      this.listproduct_parcat=[];
+      },
+      error:(error:any)=>{
+        console.log(error);  
+      },
+      complete:()=>{
+        //console.log("Completed");
+        
+      } 
+    }
+  ) 
+
+
+}
+else{
+let cat_name=this.route.snapshot.params['name'];
+
+this.catsSub=this.produitService.getbyCatProducts(cat_name)
+.subscribe({
+  next:(value:Product[])=>{
+    this.listproduct_parcat=value
+    console.log("ggg",this.listproduct_parcat);
+    this.RandProduct=this.RandProduct2=[];
+
+  },
+  error:(error:any)=>{
+    console.log(error);  
+  },
+  complete:()=>{
+    //console.log("Completed");
+  }
+}) 
+}
 
 
 
-    
+  /*   
     this.productsSub=this.produitService.getRandomProducts()
     .subscribe({
       next:(value:Product[])=>{
@@ -162,7 +192,7 @@ export class ProductListComponent {
       }
     })
 
-
+ */
    
 
 
@@ -171,6 +201,11 @@ export class ProductListComponent {
 
 
      
+     
+    }
+   })
+
+  
  
 
 

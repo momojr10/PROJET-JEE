@@ -1,0 +1,64 @@
+<div>
+<app-nav-bar></app-nav-bar>
+</div>
+
+<div class="container-fluid" style="margin-top: 70px;">
+<div class="card" >
+		
+		<div class="card-body">
+            <div class="motcle">
+			<form [formGroup]="Form_send_mt"  >
+				<div class="form-group">
+					<label>Mot clé:</label>
+					<input [formControl]="motcle" type="text" name="motcle" [value]="this.Form_send_mt.value.motcle" style="text-transform: none;" >
+          {{this.Form_send_mt.value.motcle}}
+					<button  (click)="handleSubmit()" class="btn btn-success">Chercher</button>
+				</div>
+			</form>
+        </div>
+        <div class="list_product"  *ngIf="List_Product_cat.length!=0" style="margin-top: 20px;">
+			<table class="table table-striped" style="color: rgb(90, 89, 89);">
+                <tr >
+                    <th>Ref</th>
+                    <th>Image_Product</th>
+                    <th></th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th></th>
+                    <th></th>
+                    </tr>
+				<tr  *ngFor="let item of List_Product_cat" >
+                    <td >{{item.id}}</td>
+					<td ><img style="width: 120px;" class="{{item.name}}" src="/assets/Image_Amoza/{{item.images[0].imageName}}" alt="" ></td>
+                    <td ></td>
+					<td >{{item.description}}</td>
+                    <td >{{item.price}}</td>
+				
+					<td><a   class="btn btn-danger" (click)="delete_product(item)" style="color: rgb(90, 89, 89);">Supprimer</a></td>
+                    <td><a (click)=" HandleDisplayEditViewModal(item.ref)" class="btn btn-primary" style="color: rgb(90, 89, 89);">
+                      Editer</a></td>
+				</tr>
+			</table>
+      <app-edit-component *ngIf="isSuccess && view_product.length!=0 " [view_product_child]="view_product"></app-edit-component>
+			<ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+		</div>
+		
+	
+	
+	</div>
+	</div>
+	
+</div>

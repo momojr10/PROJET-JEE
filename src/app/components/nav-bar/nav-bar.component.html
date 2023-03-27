@@ -28,25 +28,13 @@
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Categorie
         </a>
-        
-          
-
-            
-              <ul class="dropdown-menu" style="margin-left: -105px;">
-                <div style="width:450px;height:300px; border-radius:20px" class="flex gap-5 jcsb">
-                  <div>
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul class="dropdown-menu" style="">
+                <div style="width:190px;height:300px; border-radius:20px" class="">
+                  <div *ngFor="let item of Categorie "style="">
+                       <div id="cat" style="text-align:center">
+                       <a (click)="getProductsByCat(item)" > <li class="btn" style="border:none;padding:0px">{{item.nameCat}}</li></a>
+                      </div>
                   </div>
-                  <div>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </div>
-                
                 </div>
               </ul>
         
