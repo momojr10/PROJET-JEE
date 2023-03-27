@@ -17,12 +17,21 @@
    
 }
 
+.navbar .navbar-collapse
+{
+    text-align: center;
+}
 
-.cat:hover{
-  cursor: pointer;
-  background-color: rgb(204, 203, 203);
-  height:520px;
+.navbar li a:hover
+{
+    color: black !important;
+    background-color: rgb(195, 193, 193) !important;
+}
 
+
+.navbar-default .navbar-toggle
+{
+    border-style: none;/* Enlever la bordure de notre navbar*/
 }
 
  .mega-item{

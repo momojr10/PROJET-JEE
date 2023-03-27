@@ -20,8 +20,12 @@ private listproduct2:string="http://localhost:8080/produit";
 
 private listproduct:string="http://localhost:8080/produit";   
 
-private listparcategory?:string;
+private delete_prod:string="http://localhost:8080/delete";  
+
+private listparcategory!:string;
+private viewproduit!:string;
 private listcat:any
+private delete:any
 constructor(private http:HttpClient){
   
 }
@@ -33,8 +37,7 @@ getAllProducts():Observable<Product[]>{
  }
 
  getRandomProducts(): Observable<Product[]>{
-  return this.http.get<Product[]>(this.listproduct2)
-   
+  return this.http.get<Product[]>(this.listproduct2) 
  }
 
 
@@ -43,8 +46,14 @@ getAllProducts():Observable<Product[]>{
 
 
 
-
-
+deleteproduct(id:number):Observable<any>{
+     //return this.http.get(this.delete_prod+'/'+id)
+     return this.http.get(this.delete_prod+'/'+id)
+}
+getProduct(id:number): Observable<Product[]>{
+  this.viewproduit='http://localhost:8080/view_product/'+id+'';
+  return this.http.get<Product[]>(this.viewproduit)
+}
 
  getbyCatProducts(Name:any): Observable<Product[]>{
     this.listparcategory='http://localhost:8080/produit/'+Name+'';

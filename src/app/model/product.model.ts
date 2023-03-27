@@ -2,7 +2,8 @@ import { Images } from "./image.model";
 
 export interface Product{
 
-   id:number;
+   ref:number;
+   id:string;
    name:string;
    quantite:number;
    price:number;

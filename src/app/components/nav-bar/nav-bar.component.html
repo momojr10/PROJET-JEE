@@ -28,11 +28,11 @@
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Categorie
         </a>
-              <ul class="dropdown-menu" style="margin-left: -105px;">
+              <ul class="dropdown-menu" style="">
                 <div style="width:190px;height:300px; border-radius:20px" class="">
-                  <div *ngFor="let item of Categorie ">
-                       <div style="text-align:center;">
-                       <a (click)="getProductsByCat(item)" > <li class="btn" style="border: none;height:20px;">{{item.nameCat}}</li></a>
+                  <div *ngFor="let item of Categorie "style="">
+                       <div id="cat" style="text-align:center">
+                       <a (click)="getProductsByCat(item)" > <li class="btn" style="border:none;padding:0px">{{item.nameCat}}</li></a>
                       </div>
                   </div>
                 </div>

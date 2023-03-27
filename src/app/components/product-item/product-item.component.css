@@ -68,7 +68,9 @@ img{
   height: 400px;
 
 }
-
+.font{
+    font-family:'Holtwood One SC';
+}
 #box1:hover{
     color: black;
     background-color: white;

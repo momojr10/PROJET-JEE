@@ -100,6 +100,7 @@ export class ProductListComponent {
     if(val instanceof NavigationEnd){
       let url=val.url;
       console.log("url",url);
+      console.log("momo");
       let p1=this.route.snapshot.params['name'];
  // console.log("mom",p1);
 
@@ -138,7 +139,7 @@ if(p1=="produit"){
 
         this.RandProduct2[this.k]=this.Products[this.l];    
       }
-      //this.listproduct_parcat=[];
+      this.listproduct_parcat=[];
       },
       error:(error:any)=>{
         console.log(error);  
@@ -174,7 +175,7 @@ this.catsSub=this.produitService.getbyCatProducts(cat_name)
 
 
 
-    
+  /*   
     this.productsSub=this.produitService.getRandomProducts()
     .subscribe({
       next:(value:Product[])=>{
@@ -191,7 +192,7 @@ this.catsSub=this.produitService.getbyCatProducts(cat_name)
       }
     })
 
-
+ */
    
 
 

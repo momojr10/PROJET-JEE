@@ -8,6 +8,8 @@ import { PagedashboardComponent } from './Pages/dashboard/pagedashboard.componen
 import { PagepanierComponent } from './Pages/pagepanier/pagepanier.component';
 import { LoginComponent } from './components/login/login.component';
 import { CategorieComponent } from './components/categorie/categorie.component';
+import { AdminCompComponent } from './components/admin-comp/admin-comp.component';
+import { EditComponentComponent } from './components/edit-component/edit-component.component';
 
 const routes: Routes = [
   {
@@ -37,6 +39,21 @@ const routes: Routes = [
       {
         path:'cat', 
         component:CategorieComponent,
+        pathMatch:'full'
+      },
+      {
+        path:"admin/0",
+        redirectTo:'admin/0',
+        pathMatch:'full'
+      },
+      {
+        path:'admin/:id', 
+        component:AdminCompComponent,
+        pathMatch:'full'
+      },
+      {
+        path:'edit', 
+        component:EditComponentComponent,
         pathMatch:'full'
       }
 ];
