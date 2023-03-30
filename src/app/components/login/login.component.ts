@@ -20,11 +20,17 @@ signinForm:FormGroup ;
 email:FormControl ;
 password: FormControl ;
 
+client: User={
+  name:'',
+  lastName:'',
+  password: '',
+};
+
 
 
 constructor(private fb:FormBuilder,private userService:UserService){
-   this.email=fb.control("",[Validators.email,Validators.minLength(6)])
-  this.password=fb.control("",[Validators.required,Validators.minLength(6)]) 
+   this.email=fb.control("",[Validators.minLength(3)])
+  this.password=fb.control("",[Validators.required,Validators.minLength(3)]) 
   this.ar=false;
   this.signinForm=fb.group({
   email:this.email,
@@ -44,7 +50,7 @@ ngOnInit(): void {
     this.Produit=value
    // console.log(this.Produit);
   })*/
-this.usersSub=this.userService.getAllUsers()
+this.usersSub=this.userService.getAllusers()
   .subscribe({
     next:(value:User[])=>{
       this.user=value;
@@ -90,38 +96,31 @@ this.usersSub=this.userService.getAllUsers()
 
 
 handleSubmit(){
- 
- let i=0;
- 
- let y=this.email.value.toString();
- let z=this.password.value.toString();
 
- console.log(y);
- console.log(z);
+  this.client.name=this.email.value;
+  this.client.password=this.password.value;
+  console.log(this.client.name);
+  console.log(this.client.password);
  
 
- for (let x=0;x<this.user.length;x++) {
-    
 
-       if(this.user[x].email==y &&z==this.user[x].password){
-                     
-                  i++;
-        }           
-        
-  };
-
-  if(i==0){
-    this.ar=true;
-  }
-  else{
-    this.ar=false;
-  }
-
-  console.log(i);
   
+  this.userService.login(this.client).subscribe(resp=>{
+
+
+    let jwt=resp.headers.get('Authorization');  
+    console.log(jwt);
+    this.userService.saveToken(jwt);
   
+  },err=>{
+
+
+
+  })
+ 
+
+
+
 }
-
-
 
 }

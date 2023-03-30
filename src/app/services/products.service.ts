@@ -18,7 +18,7 @@ constructor(private http:HttpClient){
   
 }
 getAllProducts(): Observable<Product[]>{
-    return this.http.get<Product[]>(this.listproduct)
+    return this.http.get<Product[]>(this.listproduct2)
  }
 
  getRandomProducts(): Observable<Product[]>{
