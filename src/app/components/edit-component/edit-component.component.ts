@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from 'src/app/model/product.model';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-edit-component',
@@ -9,10 +11,27 @@ import { Product } from 'src/app/model/product.model';
 export class EditComponentComponent implements OnInit {
 
   @Input() view_product_child!:any;
-  constructor(){}
+
+  constructor(private product_Service:ProductsService,private router:Router){}
   ngOnInit(): void {
    console.log("hhhhhhhhafafdg",this.view_product_child);
+
+ 
    
+  }
+  onSubmit(){
+    this.product_Service.updateProduct(this.view_product_child.ref, this.view_product_child)
+    .subscribe(() =>{
+      console.log('Product updated')
+      location.reload()
+    } ,
+      (error) => console.log(error)
+      
+    );
+   
+  }
+  closeModal(){
+
   }
   
   

@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable, ModuleWithComponentFactories } from "@angular/core";
 import { BehaviorSubject, map, Observable } from "rxjs";
 import { Category } from "../model/category.model";
@@ -40,7 +40,14 @@ getAllProducts():Observable<Product[]>{
   return this.http.get<Product[]>(this.listproduct2) 
  }
 
-
+ updateProduct(ref: number, produit: Product) {
+  const url = 'http://localhost:8080/edit_product/'+ref+'';
+  const body = JSON.stringify(produit);
+  const headers = new HttpHeaders({
+    'Content-Type': 'application/json'
+  });
+  return this.http.post(url, body, { headers });
+}
 
 
 
