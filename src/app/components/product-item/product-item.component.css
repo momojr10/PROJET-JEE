@@ -2,11 +2,17 @@
     width: 300px;
     height: 450px;
     cursor: pointer;
-    margin-left: 70px;
+   /*   margin-left: 40px;
+    
+     */
+
+     margin-top: 80px; 
+     margin-bottom: 80px;
+     box-sizing: border-box;
 } 
 
 #box1{
-    width: 240px;
+    width: 250px;
     height: 50px;
     cursor: pointer;
     background-color: black;
@@ -28,18 +34,12 @@
 #card{
     width: 300px;
     display: grid;
-    grid-template-columns: 240px 50px;
+    grid-template-columns: 250px 50px;
     gap: 10px;
      
 }
  
-  #items{
 
-    margin-top: 80px;
-    margin-bottom: 80px;
-    box-sizing: border-box;
-    
-}
 
 .desc{
 margin-top: 30px;
@@ -62,7 +62,9 @@ img{
   height: 400px;
 
 }
-
+.font{
+    font-family:'Holtwood One SC';
+}
 #box1:hover{
     color: black;
     background-color: white;
@@ -70,12 +72,35 @@ img{
 
 
 
-
-i{
-
-    color: white;
+.product-reviews i.selected{
+    color:orange;
 }
 
+
+
+/***********MEDIA ********/
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width:992px) {
+   
+  
+
+}
+@media screen and (max-width:768px) {
+    #responsive_product{
+        margin-left: -133px;
+       
+    }
+
+}
+@media screen and (max-width:576px) {
+  
+}
+
+@media screen and (max-width:427px) {
+   
+}
 
 
 

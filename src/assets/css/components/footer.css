@@ -8,7 +8,7 @@ footer .footer-item{
 
 footer .footer-item h4{
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     margin:0;
 }
 footer .footer-item p{
@@ -16,7 +16,7 @@ footer .footer-item p{
 }
 footer .footer-list h2{
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 0.7rem;
 }
 footer .footer-list{
     width: 300px;
@@ -27,7 +27,7 @@ footer .footer-list{
 /***************** FOOTER LIST *************/
 
 footer ul li{
-    font-size: 1.1rem;
+    font-size:1.2rem;
     padding: 5px 0;
 }
 footer .footer-tags{
@@ -38,10 +38,10 @@ footer .footer-tags{
 footer .footer-tags .tags{
     border: 1px solid var(--main-color-white);
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 footer .footer-subscribe p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 footer input{
     width: 100%;

@@ -15,7 +15,7 @@
     font-size: 1.18rem;
     font-weight: 500;
     letter-spacing: 0.08rem;
-    opacity: 0.7;
+    opacity: 0.8;
     margin: 0;
 }
 .slider-content h2{
@@ -26,19 +26,20 @@
     margin-bottom: 0px;
 }
 .slider-content h3{
-    font-size: 5.9rem;
+    font-size: 3.9rem;
     margin-bottom: 10px;
 
 }
 .slider-content .slider-actions > span{
     font-weight: bold;
+    font-family: 'Segoe Script', 'Savoye LET',Tahoma, Geneva, Verdana, sans-serif;
 }
 .slider-content .slider-actions .price{
     font-weight: bold;
     background-color: var(--main-color);
     color:var(--main-color-white);
     padding: 10px;
-    font-size: 1.9rem;
+    font-size: 1.3rem;
     transform: rotate(-30deg);
 }
 .slider-content .slider-actions .shop-now.btn{

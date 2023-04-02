@@ -1,4 +1,34 @@
-<p>login works!</p>
+<form action="" [formGroup]="signinForm">
 
+  <div class="container">
 
-<p>hey</p>
+     <div class="error2"  *ngIf="ar">
+       Incorrect email or password.
+     </div>
+     
+    <div class="input1">
+      <div> <label for="Email1" class="form-label">Username</label> </div> 
+       <input type="email"  id="Email1" name="email" [formControl]="username">
+     </div>
+
+     <div class="error"  *ngIf="username.dirty && !username.valid">
+      Please enter valid email
+     </div>
+
+     <div class="input2">
+      <div > <label for="Password1" >Password</label>    </div> 
+       <input type="password"  id="Password1" name="password" [formControl]="password">
+     </div>
+
+     <a href="" class="aa">Forgot your password ?</a> 
+
+    <button class="sign" [disabled]="!this.signinForm.valid" (click)="handleSubmit()">SIGN IN</button>
+
+    <a href="" class="ab">Create account</a> 
+    <a href="" class="ab">Return to Store</a> 
+  </div>
+
+  
+  
+</form>
+

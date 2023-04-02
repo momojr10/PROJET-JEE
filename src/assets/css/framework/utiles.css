@@ -28,7 +28,7 @@ h3{
     font-size: 28px;
 }
 h4{
-    font-size: 22px;
+    font-size: 80px;
 }
 h5{
     font-size: 18px;
@@ -682,14 +682,14 @@ img{
 }
 
 
-/*CONTAINER*/
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm{
+/*container1*/
+.container11,
+.container11-fluid,
+.container11-xxl,
+.container11-xl,
+.container11-lg,
+.container11-md,
+.container11-sm{
     width: 100%;
     padding-right: var(10);
     padding-left: var(10);
@@ -698,27 +698,27 @@ img{
 }
 
 @media(min-width:576px){
-    .container-sm,.container{
+    .container11-sm,.container11{
         max-width: 540px;
     }
 }
 @media(min-width:768px){
-    .container-md,.container-sm,.container{
+    .container1-md,.container1-sm,.container1{
         max-width: 720px;
     }
 }
 @media(min-width:992px){
-    .container-lg,.container-md,.container-sm,.container{
+    .container1-lg,.container1-md,.container1-sm,.container1{
         max-width: 960px;
     }
 }
 @media(min-width:1200px){
-    .container-xl,.container-lg,.container-md,.container-sm,.container{
+    .container1-xl,.container1-lg,.container1-md,.container1-sm,.container1{
         max-width: 1140px;
     }
 }
 @media(min-width:1400px){
-    .container-xxl,.container-xl,.container-lg,.container-md,.container-sm,.container{
+    .container1-xxl,.container1-xl,.container1-lg,.container1-md,.container1-sm,.container1{
         max-width: 1320px;
     }
 }

@@ -1,1 +1,115 @@
-<p>panier works!</p>
+
+
+<ng-container *ngIf="Products?.length!=0">
+    <div class="container flex gap-10" style="padding-left:85px;">
+        <div style="width: 800px;background-color: rgb(205, 203, 203); border-radius:20px">
+            <table class="table table stripped">
+                <thead>
+                    <tr >
+                    <th>Product</th>
+                    <th></th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of Products;let i=index">
+                        <td><img style="width: 120px;" src="/assets/Image_Amoza/{{item.images[0].imageName}}" alt=""  height="100px"></td>
+                       
+                        <td  class="cartcenter">{{item.description}}</td>
+                        <td class="cartcenter"><div style="width:100px;text-align:center;">
+                            <input  type="text" value="{{this.cartService.getQuantityProducts(item) }}" style="text-align:center;"  class="form-control"    aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <!--[(ngModel)]="Qproduct.quantite"  (click)="TotalPriceItem()" ! -->
+                        </div></td>
+                        <td class="cartcenter" >
+                            {{this.cartService.getPriceProductsItem(item) }}
+                        </td>
+                        
+                        <td class="cartcenter"><button  class="btn btn-danger" (click)="removeItem(item)"><i class="fas fa-trash-alt"></i></button></td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="6">
+                                <div class="flex gap-20" style="padding-left:350px;">
+                                <div><button (click)="emptycart()" class="btn btn-danger" >Empty Cart</button></div>
+                                <div><button routerLink="" class="btn btn-primary">Shop More</button></div>
+                               
+                            </div>
+                            </td>
+                        
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="width:300px;background-color: rgb(205, 203, 203); border-radius:20px">
+            <table class="table">
+                <thead>
+                    <tr>
+                         <th>Have a coupon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <td colspan="2">
+                        <div class="input-group">
+                            <form action="" [formGroup]="signinForm">
+                            <input  type="text" [formControl]="text" name="text" class="form-control" id="discount" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button style="margin-right:10px;"(click)="handleSubmit()" class="btn btn-primary" type="button" id="button-addon2">Apply</button>
+                        </form>
+                        </div></td> 
+                    </tr>
+                    <tr>
+                        <td>Total Price:</td>
+                        <td>{{TotalPrice}}</td>
+                    </tr>
+                    <tr>
+                        <td>Discount:</td>
+                        <td>{{discount}}</td>
+                    </tr>
+                    <tr>
+                        <td>Total:</td>
+                        <td>{{Total}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="flex gap-10">
+                                    <div>
+                                    <i class="fa-3x fa-brands fa-cc-paypal"></i>
+                                    
+                                </div>
+                                <div>
+                                    <i class="fa-3x fa-brands fa-cc-visa"></i>
+                                </div>
+                                <div><i class="fa-3x fa-brands fa-cc-mastercard"></i>
+                                </div>
+                    </div>
+                    </td>
+                        
+                    </tr>
+                  <tr>
+                    
+                        <td colspan="2"><button class="btn btn-success" (click)="ValiderPanier()">Checkout</button></td>
+                    
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+    </ng-container>
+<ng-container *ngIf="Products?.length==0">
+<h2> {{this.message}}</h2>
+<div class="container" style="margin-bottom:200px;">
+    <div class="card">
+        <h5 class="card-title">My cart</h5>
+    </div>
+    <div class="center" style="margin-top:90px;" >
+       <img  src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="">
+       <h4>Your cart is empty!</h4>
+       <h6>Add item to it now</h6>
+       <button routerLink="" class="btn btn-primary">Shop now</button>
+    </div>
+</div>
+</ng-container>

@@ -1,0 +1,28 @@
+
+
+/***********MEDIA ********/
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width:992px) {
+   
+  
+
+}
+@media screen and (max-width:768px) {
+    .btn.btn-danger, .btn.btn-primary, th{
+        display: none;
+    }
+    .img{
+        width: 50px;   
+        height: 20px;
+    }
+
+}
+@media screen and (max-width:576px) {
+  
+}
+
+@media screen and (max-width:427px) {
+   
+}

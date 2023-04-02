@@ -1,6 +1,6 @@
 <div class="banner-promo-container tc">
-  <div class="container1">
-      <div class="banner-promo" style="padding-top: 5px;">
+  <div class="container">
+      <div class="banner-promo" style="padding-top:5px;height:50px;text-align: center;">
        GET UP to 40% New-season Style 
        <span class="women">Women</span>
        *Limited time only
@@ -11,52 +11,50 @@
 <div>
 <nav class="navbar navbar-expand-lg bg-light">
 <div class="container-fluid">
-  <a class="navbar-brand site" href="#">AMOZA</a>
+  <a class="navbar-brand site" routerLink="">AMOZA</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+        <a class="nav-link active" aria-current="page" routerLink="">Accueil</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link"[routerLink]="['/product']">Link</a>
       </li>
       
       <li class="nav-item dropdown" >
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Categorie
         </a>
-        <div style="position:absolute;display:flex;">
-          <div style="width:177px;height:200px;margin:0;">
-        <ul class="dropdown-menu ">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul class="dropdown-menu ">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-      </div>
+              <ul class="dropdown-menu" style="">
+                <div style="width:190px;height:300px; border-radius:20px" class="">
+                  <div *ngFor="let item of Categorie "style="">
+                       <div id="cat" style="text-align:center">
+                       <a (click)="getProductsByCat(item)" > <li class="btn" style="border:none;padding:0px">{{item.nameCat}}</li></a>
+                      </div>
+                  </div>
+                </div>
+              </ul>
+        
+        
      
       </li>
   
       <li class="nav-item">
-        <a class="nav-link ">Dashboard</a>
+        <a class="nav-link" href="javascript:void(0);" [routerLink]="['/dashboard']" >Dashboard</a>
       </li>
     </ul>
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
+    <button  (click)="navigate()" class="btn" style="background-color:#008080 ;width:80px;">
+      <i style="font-size:30px;color:white" class="fas fa-cart-plus"></i>
+      <div style="font-size:15px;" style="position: absolute;top:21px;right: 17px;" class="badge bg-danger">{{totalItem}}</div>
+  </button>
+
   </div>
 </div>
 </nav>

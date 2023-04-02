@@ -1,0 +1,60 @@
+<div class="modal-product-view">
+    <div class="overlay">
+    </div>
+        <div class="modal-product-view-container">
+    		<form  (ngSubmit)="onSubmit()" >
+				<div class="form-group" style="margin-top: 20px; padding:0px 20px ;" >
+                    <table class="table table-striped" style="color: rgb(90, 89, 89);" >
+                        <tr >
+                            <th>Ref Produit:</th>
+                            <td><input class="form-control" type="number" name="ref" [value]="view_product_child.ref"  style="text-transform: none;" ></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr >
+                            <th>Name Produit:</th>
+                            <td><input class="form-control"   type="text" name="name" [value]="view_product_child.name"  style="text-transform: none;" [(ngModel)]="view_product_child.name"></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr >
+                            <th>Prix Produit:</th>
+                            <td><input class="form-control"  type="text" name="price" [value]="view_product_child.price"  style="text-transform: none;" [(ngModel)]="view_product_child.price" ></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr >
+                            <th>Categories name:</th>
+                            <td><input class="form-control"  type="text" name="name_cat" [value]="view_product_child.categoryname"  style="text-transform: none;"[(ngModel)]="view_product_child.categoryname" ></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr >
+                            <th>Description Produit:</th>
+                            <td><input class="form-control" type="text" name="desc" [value]="view_product_child.description" style="text-transform: none;" [(ngModel)]="view_product_child.description" ></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr >
+                            <th>Image Name:</th>
+                            <td><input class="form-control"  type="text" name="img_name" [value]="view_product_child.images[0].imageName" style="text-transform: none;" ></td>
+                        </tr>
+                            
+                    </table>    
+					<button   class="btn btn-success">Editer</button>
+				</div>
+			</form>
+           
+        </div>
+</div>
+

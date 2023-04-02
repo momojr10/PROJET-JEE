@@ -1,0 +1,77 @@
+input{
+   
+    width: 450px;
+    height: 45px;
+    border: 1px solid black;
+}
+
+
+.container{
+  
+  transform: translate(0);
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto ;
+  gap:18px;
+ 
+  width: 470px;
+  margin: 130px auto;
+}
+
+
+
+p{
+  color: rgb(253, 0, 0);
+  transform: translate(32%);
+}
+
+.sign{
+  width: 450px;
+  height: 45px;
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  background-color: black;
+}
+
+
+
+a{
+  color: red;
+  text-decoration: none;
+ 
+}
+
+.aa{
+  
+  transform: translate(15%);
+}
+
+.ab{
+  color: red;
+  transform: translate(17%);
+}
+
+
+.sign:hover{
+  color: black;
+  background-color: white;
+}
+
+button:disabled{
+cursor: not-allowed;
+}
+
+.error{
+  color: red;
+  margin-top: -15px;
+}
+
+
+.error2{
+  margin-left: 90px;
+  color: red;
+  margin-bottom: 5px;
+  font-size: 20px;
+}

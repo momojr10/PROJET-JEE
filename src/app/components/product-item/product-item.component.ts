@@ -1,6 +1,8 @@
 import { Component, Input, OnDestroy, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 import {Subscriber, Subscription } from 'rxjs';
 import { Product } from 'src/app/model/product.model';
+import { CartService } from 'src/app/services/cart.service';
 import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
@@ -11,36 +13,49 @@ import { ProductsService } from 'src/app/services/products.service';
 })
 
 export class ProductItemComponent  {
-  @Input() Produit: any;
+  @Input() Product: any;
+  @Input() RandProduct: any;
 
   data0:string []=[];
   data1:string []=[];
-constructor(){}
+  recup:any[]=[];
+constructor(private p:CartService, private router :Router){}
 
-  ngOnDestroy(): void {
-
-
-    throw new Error('Method not implemented.');
-  }
+  
   
  
-  enterF(Produit:any){
-     console.log(Produit.id);
+  enterF(Product:any){
+    // console.log(Produit.id);
      
-   $("."+Produit.name).attr("src",Produit.images[1]);
-   $("."+Produit.id).removeAttr("hidden");
-   $("."+Produit.id).show();
+   $("."+Product.name).attr("src","/assets/Image_Amoza/"+Product.images[1].imageName);
+   $("."+Product.id).removeAttr("hidden");
+   $("."+Product.id).show();
    
   
   } 
 
-  leave(Produit:any){
-    console.log(Produit.id);
-    $("."+Produit.name).attr("src",Produit.images[0]);
-    $("."+Produit.id).hide();
+  leave(Product:any){
+   
+    $("."+Product.name).attr("src","/assets/Image_Amoza/"+Product.images[0].imageName);
+    $("."+Product.id).hide();
     
   }
+  addCart(Product:any){  
+this.p.getAddPanierProducts(Product);
+this.p.getPriceProductsItem(Product);
+this.p.getQuantityProducts(Product);
+this.router.navigate(["/panier"]); 
+  }
+ 
 
+
+
+
+
+
+
+
+  
 
  /*  enter(){
     $("#box2").css("background-color", "white");
@@ -104,10 +119,7 @@ constructor(){}
           });
         });
      */
-   
-   
-   
-   
+
         
   }
 
