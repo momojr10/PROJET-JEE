@@ -1,20 +1,19 @@
-<ng-container *ngIf="Produit.length!=0">
 
-<div id="items"  (mouseenter)="enterF(Produit)" (mouseleave)="leave(Produit)">
-   
-        <img class="{{Produit.name}}" src={{Produit.images[0]}} alt="{{Produit.images[1]}}">
-     
-          <div class="desc">{{Produit.description}}</div>
 
+<div id="items" class="borde"  (mouseenter)="enterF(Product)" (mouseleave)="leave(Product)">
+  <div class="relative" >
+        <img class="{{Product.name}}" src={{Product.images[0]}} alt="">
+          <div class="desc">{{Product.description}}</div>
+          <span class="badge hot absolute">hot</span>
+          <span class="badge sold absolute">-20%</span>
           <div class="price">
-           {{Produit.price}} &dollar;
+           {{Product.price}} &dollar;
           </div>
+        <div  class="{{Product.id}}" id="card"  hidden>
+            <div   id="box1" (click)="addCart(Product)">Add To Card</div>
 
-        <div  class="{{Produit.id}}" id="card"  hidden>
-            <div  id="box1" (click)="addCart(Produit)">Add To Card</div>
             <div   id="box2" ><i class="fa-regular fa-heart"></i></div>
         </div> 
-
-    
+      </div>
 </div>
-</ng-container>
+

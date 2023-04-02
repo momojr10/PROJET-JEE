@@ -11,20 +11,41 @@ export class ProductsService{
   }
 
 private listproduct:string="http://localhost:3000/Products";   
+private listproduct2:string="http://localhost:8080/produit";   
 private listparcategory?:string;
 private listcat:any
 constructor(private http:HttpClient){
   
 }
 getAllProducts(): Observable<Product[]>{
-    return this.http.get<Product[]>(this.listproduct)
+    return this.http.get<Product[]>(this.listproduct2)
  }
+
+ getRandomProducts(): Observable<Product[]>{
+  return this.http.get<Product[]>(this.listproduct2)
+   
+ }
+
+
+
+
+
+
+
+
+
+
+ 
 
  getbyCatProducts(Name:any): Observable<Product[]>{
     this.listparcategory='http://localhost:3000/Products?category='+Name+'';
     return this.http.get<Product[]>(this.listparcategory)
  }
 }
-
+var Moi:string[]=[]
+function name(params:string) {
+   Moi.push(params)
+   console.log(Moi); 
+ }
  //name("Mohamed")
  //name("Mama")

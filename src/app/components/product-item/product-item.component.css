@@ -1,12 +1,31 @@
+ 
+ span.badge.sold{
+    top: 40px;
+    background-color:red;
+ }
+ span.badge.hot{
+    top: 10px;
+    background-color:#2ba968;
+    text-transform: uppercase;
+}
+ .borde{
+    border-radius: 20px;
+ }
  #items{
     width: 300px;
     height: 450px;
     cursor: pointer;
-    margin-left: 70px;
+   /*   margin-left: 40px;
+    
+     */
+
+     margin-top: 80px; 
+     margin-bottom: 80px;
+     box-sizing: border-box;
 } 
 
 #box1{
-    width: 240px;
+    width: 250px;
     height: 50px;
     cursor: pointer;
     background-color: black;
@@ -28,16 +47,16 @@
 #card{
     width: 300px;
     display: grid;
-    grid-template-columns: 240px 50px;
+    grid-template-columns: 250px 50px;
     gap: 10px;
      
 }
  
-  #items{
+#items{
 
-    margin-top: 80px;
-    margin-bottom: 80px;
-    box-sizing: border-box;
+    /*  margin-top: 80px; 
+    margin-bottom: 80px; */
+  
     
 }
 

@@ -6,6 +6,7 @@ import { PageaccueilComponent } from './pageaccueil/pageaccueil.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { PagedashboardComponent } from './Pages/dashboard/pagedashboard.component';
 import { PagepanierComponent } from './Pages/pagepanier/pagepanier.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   {
@@ -28,7 +29,11 @@ const routes: Routes = [
         path:'panier', 
         component:PagepanierComponent,
         pathMatch:'full'
-      }
+      },{
+        path:'login', 
+        component:LoginComponent,
+        pathMatch:'full'
+      },
 ];
 
 @NgModule({

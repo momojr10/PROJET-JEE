@@ -59,6 +59,7 @@ getQuantityProducts(produit: any) {
         
     })
     return Total;
+
  } 
 
 
@@ -112,6 +113,14 @@ getPanierProducts(produit: any) {
       //this.getTotalProducts();
       //this.PannierUnique();
     // return this.arraySet;
+
+ }
+ getPanierProducts(produit:any){
+   this.cart.push(produit)
+   this.productList.next(this.cart);
+   this.getTotalProducts();
+   console.log(this.productList);
+
    }
   // PannierUnique(){
     //console.log(this.arraySet);
