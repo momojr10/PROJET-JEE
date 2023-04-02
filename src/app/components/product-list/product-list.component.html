@@ -76,7 +76,7 @@
           </div>
   </div>
 </div>
-    <div id="" class="mb-20 container" style="margin-top:-70px;padding:0px 80px;">
+    <div  class="mb-20 container " style="margin-top:-70px; margin-bottom:90px;padding:0px 166px;">
       <div class="row">
              <app-product-item class="items"  *ngFor="let Product of RandProduct2" [Product]="Product" > 
         </app-product-item> 
@@ -99,7 +99,7 @@
    ON-THE-GO ACCESSORIES
  </p>
 
- <P class="bx2">
+ <P class="bx2" >
    PACKABLE STYLES
  </P>
  </div>
@@ -110,20 +110,7 @@
    SHOP NOW
 </button>
 
-<div class="banner-big-sale">
-  <div class="container flex jcsb aic">
-          <div class="banner-big-sale-btn btn">
-              Big Sale
-          </div>
-          <div class="banner-big-sale-content ">
-              ALL NEW FASHION BRANDS ITEMS UP TO 70% OFF
-          </div>
-          <div class="banner-big-sale-action btn ">
-          View Sale
-          </div>
-  </div>
-</div>
- <div class="box2">
+ <div class="box2" style="margin-top: -70px;">
    <p class="bx1">
       ON-THE-GO ACCESSORIES
     </p>
@@ -136,14 +123,26 @@
       SHOP NOW
    </button>
 
-
-
  </div> 
+ 
+<div class="banner-big-sale" >
+  <div class="container flex jcsb aic">
+          <div class="banner-big-sale-btn btn">
+              Big Sale
+          </div>
+          <div class="banner-big-sale-content ">
+              ALL NEW FASHION BRANDS ITEMS UP TO 70% OFF
+          </div>
+          <div class="banner-big-sale-action btn ">
+          View Sale
+          </div>
+  </div>
+</div>
 
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
  
 
-<div class="container-fluid" style="margin-top:-150px;padding:0px 50px;">
+<div id="responsive" class="container-fluid" style="margin:-10px 111px;">
  
     <div class="row">
         <app-product-item class="items"  *ngFor="let Product of RandProduct" [Product]="Product" >
@@ -153,7 +152,7 @@
 </div>
 
 
-<div class="choix">
+<div class="choix" style="margin-top: 250px;">
   <div>
  <h2>Why choose AMOZA?</h2>
 </div>
@@ -162,20 +161,20 @@
    <div class="container text-center" id="ftg">
      <div class="row">
       <div class="col-md-4">
-       <i class="fa-regular fa-heart"></i>
+       <i style="font-size: 40px;" class="fa-regular fa-heart" ></i>
        <p class="first">Virtual Fitting Room</p>
        <p>  Try on a style before you purchase</p>
 
       </div>
 
       <div class="col-md-4">
-       <i class="fa-sharp fa-solid fa-child-dress"></i>
+       <i  style="font-size: 40px;" class="fa-sharp fa-solid fa-child-dress"></i>
        <p class="first">Personalize Your Own</p>
        <p>Customize your very own dress</p>
       </div>
 
       <div class="col-md-4">
-       <i class="fa-solid fa-truck-front"></i>
+       <i  style="font-size: 40px;" class="fa-solid fa-truck-front"></i>
        <p class="first"> Free Shipping</p>
        <p>We can reach you wherever you are</p>
       </div>
@@ -186,7 +185,7 @@
 
 </ng-container>
 <ng-container *ngIf="listproduct_parcat.length!=0">
-  <div class="container" style="padding:40px 90px;">
+  <div class="container" style="padding:40px 90px; ">
     <div class="row">
 
     <app-product-item class="items"  *ngFor="let Product of listproduct_parcat" [Product]="Product" > 

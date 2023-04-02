@@ -39,13 +39,7 @@
      
 }
  
-#items{
 
-    /*  margin-top: 80px; 
-    margin-bottom: 80px; */
-  
-    
-}
 
 .desc{
 margin-top: 30px;
@@ -78,12 +72,35 @@ img{
 
 
 
-
-i{
-
-    color: white;
+.product-reviews i.selected{
+    color:orange;
 }
 
+
+
+/***********MEDIA ********/
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width:992px) {
+   
+  
+
+}
+@media screen and (max-width:768px) {
+    #responsive_product{
+        margin-left: -133px;
+       
+    }
+
+}
+@media screen and (max-width:576px) {
+  
+}
+
+@media screen and (max-width:427px) {
+   
+}
 
 
 
