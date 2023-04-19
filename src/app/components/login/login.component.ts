@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { User } from 'src/app/model/User';
-import { UserService } from 'src/app/services/user.service';
+import { User } from 'src/app/model/user.model';
+import { UserService } from 'src/app/services/users.service';
+
 
 @Component({
   selector: 'app-login',
@@ -15,7 +17,8 @@ export class LoginComponent {
   usersSub: Subscription | undefined
   user2: User[]=[] ;
    ar:boolean;
-
+   isSucces!:boolean;
+   setupListeners:any
 signinForm:FormGroup ;
 email:FormControl ;
 password: FormControl ;
@@ -28,7 +31,7 @@ client: User={
 
 
 
-constructor(private fb:FormBuilder,private userService:UserService){
+constructor(private fb:FormBuilder,private userService:UserService,private router:Router){
    this.email=fb.control("",[Validators.minLength(3)])
   this.password=fb.control("",[Validators.required,Validators.minLength(3)]) 
   this.ar=false;
@@ -73,25 +76,9 @@ this.usersSub=this.userService.getAllusers()
       
     }
   })
-   
-
-
-
-
+ 
+  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -103,7 +90,7 @@ handleSubmit(){
   console.log(this.client.password);
  
 
-
+ this.isSucces=this.userService.isAuthenticated();
   
   this.userService.login(this.client).subscribe(resp=>{
 
@@ -111,10 +98,25 @@ handleSubmit(){
     let jwt=resp.headers.get('Authorization');  
     console.log(jwt);
     this.userService.saveToken(jwt);
-  
+   
+  if (this.isSucces) {
+    if(this.userService.isAdmin()==-1){
+      this.router.navigate(["/pageaccueil/produit"]); 
+    }
+    else{
+      this.router.navigate(["/admin/0"]); 
+
+    }
+    
+  }
+ 
   },err=>{
 
-
+    if (this.isSucces==false) {
+    
+      this.router.navigate(["/inscription"]); 
+    }
+    
 
   })
  
