@@ -3,6 +3,7 @@ import { Injectable, ModuleWithComponentFactories } from "@angular/core";
 import { BehaviorSubject, map, Observable } from "rxjs";
 import { Category } from "../model/category.model";
 import { Product } from "../model/product.model";
+import { UserService } from "./users.service";
 
 @Injectable({providedIn:"root"})
 
@@ -26,7 +27,7 @@ private listparcategory!:string;
 private viewproduit!:string;
 private listcat:any
 private delete:any
-constructor(private http:HttpClient){
+constructor(private http:HttpClient,private authService:UserService){
   
 }
 getAllProducts():Observable<Product[]>{
@@ -54,6 +55,7 @@ getAllProducts():Observable<Product[]>{
 
 
 deleteproduct(id:number):Observable<any>{
+   // let headers=new HttpHeaders({'authorization':'Bearer '+this.authService.jwt})
      //return this.http.get(this.delete_prod+'/'+id)
      return this.http.get(this.delete_prod+'/'+id)
 }

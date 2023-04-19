@@ -102,7 +102,7 @@ export class ProductListComponent {
       console.log("url",url);
       console.log("momo");
       let p1=this.route.snapshot.params['name'];
- // console.log("mom",p1);
+  console.log("mom",p1);
 
 //console.log("hhh"+this.route.snapshot.params['id']);
 if(p1=="produit"){

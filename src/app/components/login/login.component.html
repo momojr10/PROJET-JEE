@@ -1,34 +1,41 @@
+
+<div class="container-fluid" style="text-transform: none;">
+
+  <div id="log">
 <form action="" [formGroup]="signinForm">
 
-  <div class="container">
 
      <div class="error2"  *ngIf="ar">
        Incorrect email or password.
      </div>
      
     <div class="input1">
-      <div> <label for="Email1" class="form-label">Username</label> </div> 
-       <input type="email"  id="Email1" name="email" [formControl]="username">
+      <div> <label for="Email1" class="form-label">Email address</label> </div> 
+       <input type="email"  id="Email1" name="email" [formControl]="email">
      </div>
 
-     <div class="error"  *ngIf="username.dirty && !username.valid">
+     <div class="error"  *ngIf="email.dirty && !email.valid">
       Please enter valid email
      </div>
 
      <div class="input2">
       <div > <label for="Password1" >Password</label>    </div> 
        <input type="password"  id="Password1" name="password" [formControl]="password">
+      
      </div>
 
-     <a href="" class="aa">Forgot your password ?</a> 
+     <div style="margin-top:20px;">
+      <button class="sign" [disabled]="!this.signinForm.valid" (click)="handleSubmit()">SIGN IN</button>
+     </div>
+     
+     <div style="margin:10px 50px;">
+      <a href="" class="aa">Forgot your password ? </a> 
+      <a href="" class="ab">Create account </a> 
+      <a href="" class="ab">Return to Store</a> 
+   
+     </div>
 
-    <button class="sign" [disabled]="!this.signinForm.valid" (click)="handleSubmit()">SIGN IN</button>
-
-    <a href="" class="ab">Create account</a> 
-    <a href="" class="ab">Return to Store</a> 
-  </div>
-
-  
-  
+   
 </form>
-
+</div>
+</div>

@@ -10,8 +10,16 @@ import { LoginComponent } from './components/login/login.component';
 import { CategorieComponent } from './components/categorie/categorie.component';
 import { AdminCompComponent } from './components/admin-comp/admin-comp.component';
 import { EditComponentComponent } from './components/edit-component/edit-component.component';
+import { InscriptionComponent } from './components/inscription/inscription.component';
+import { AuthGuard } from './services/AuthGuard.service';
 
 const routes: Routes = [
+
+  {
+    path:"login", 
+    component:LoginComponent,
+    pathMatch:'full'
+  },
   {
     path:"",
     redirectTo:'pageaccueil/produit',
@@ -20,26 +28,23 @@ const routes: Routes = [
       {
         path:'dashboard', 
         component:PagedashboardComponent,
-        pathMatch:'full'
-      },
+        canActivate: [AuthGuard]
+      },  
        {
         path:'pageaccueil/:name', 
         component:PageaccueilComponent,
-        pathMatch:'full'
+        canActivate: [AuthGuard]
       },
       {
         path:'panier', 
         component:PagepanierComponent,
-        pathMatch:'full'
-      },{
-        path:'login', 
-        component:LoginComponent,
-        pathMatch:'full'
+        canActivate: [AuthGuard]
       },
       {
         path:'cat', 
         component:CategorieComponent,
-        pathMatch:'full'
+        canActivate: [AuthGuard]
+
       },
       {
         path:"admin/0",
@@ -49,11 +54,16 @@ const routes: Routes = [
       {
         path:'admin/:id', 
         component:AdminCompComponent,
-        pathMatch:'full'
+        canActivate: [AuthGuard]
       },
       {
         path:'edit', 
         component:EditComponentComponent,
+        canActivate: [AuthGuard]
+      },
+      {
+        path:'inscription', 
+        component:InscriptionComponent,
         pathMatch:'full'
       }
 ];

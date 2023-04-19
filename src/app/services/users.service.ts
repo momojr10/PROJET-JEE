@@ -1,13 +1,9 @@
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { JwtHelperService } from "@auth0/angular-jwt";
 import { Observable } from "rxjs";
 import { User } from "../model/user.model";
-
-
-
-
-
+import { Router } from "@angular/router";
 
 
 @Injectable({providedIn:"root"})
@@ -20,6 +16,7 @@ export class UserService{
   jwt:any | undefined;
   name:string | undefined;
   roles:Array<any> | undefined;
+  
 
 
 
@@ -27,7 +24,7 @@ export class UserService{
 
 
 
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient,private router: Router) { }
 
     login(data: User):Observable<any>{
       let host="http://localhost:8080";
@@ -62,8 +59,8 @@ export class UserService{
       console.log(this.name);
       console.log(this.roles);
       console.log(this.isAuthenticated());
-      console.log(this.isAdmin());
-      console.log(this.isUser());
+      console.log("admin",this.isAdmin());
+      console.log("user",this.isUser());
       
     }
 
@@ -93,7 +90,20 @@ export class UserService{
       this.roles=undefined;
 
     }
-
+    isUserLoggedAndAccessTokenValid(): boolean {
+      if (localStorage.getItem('token')) {
+        // TODO il faut verifier si le access token est valid
+        return true;
+      }
+      
+        this.router.navigate(['login']);
+      
+     
+      return false;
+    }
+      
+    
+  
 
 
 }
